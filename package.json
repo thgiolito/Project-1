@@ -1,0 +1,22 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "Supernatural bug killing enterprise website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thgiolito/Project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thgiolito/Project-1/issues"
+  },
+  "homepage": "https://github.com/thgiolito/Project-1#readme",
+  "dependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
