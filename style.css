@@ -1,0 +1,121 @@
+body {
+    width: 90vw;
+    padding: 0;
+    margin: auto;
+    background-color: black;
+    color: #72B62B;
+}
+
+h1 {
+    font-family: Stencil;
+    text-align: center;
+    font-size: 6vw;
+}
+
+.beasts {
+    width: 90vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beast {
+    width: 20vw;
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #9DC41A 3px 0px 15px;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.beast-img {
+    width: 100%;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .beast-img:hover {
+    display: none;
+}
+
+.hover-img { 
+    z-index: 2;
+}
+
+.hover-img:hover { 
+    display: block; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+} */
+
+h2 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 3vw ;
+}
+
+.beastDetail {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: #9DC41A 3px 0px 15px;
+    background-color: #0f0905;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.beastDetailHeader{
+    display: flex;
+    justify-content: end;
+}
+
+.beastDetailName{
+    flex-grow: 7;
+}
+.quitButton {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ibb.co/n8CV6yJ/TDclose.png");
+    height: 5vw;
+    width: 5vw;
+}
+
+.beastDetailImg {
+    width: 80vw;
+    margin: auto;
+    height: 60vw;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 2vw ;
+}
+
+p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    width: 40vw;
+    height: 6vh;
+    background-color: #72B62B;
+    color: black;
+    font-family: Stencil;
+    font-size: 4vw;
+}
