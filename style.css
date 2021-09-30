@@ -1,0 +1,42 @@
+body {
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+
+
+}
+main {
+    margin-top: 20vh;
+    width : 90vw;
+    height: 90vh;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.637);
+
+}
+
+h1 {
+    display: flex;
+    width:max-content;
+
+}
+
+#block {
+    width:45vw;
+    height: 60vh;
+    display: flex;
+    border: 2px solid black;
+
+}
+
+form{
+    width: fit-content;
+    padding: 2px;
+
+}
+
+select {
+    display:inline-flex;
+    border: 2px solid black;
+    width: 100%;
+}
+
