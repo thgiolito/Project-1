@@ -2,6 +2,7 @@ body {
 background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
 font-family: Courier;
+color: #9DC41A;
 
 
 }
@@ -11,20 +12,29 @@ main {
     height: 92vh;
     display:flex;
     flex-wrap:wrap;
+    justify-content: space-around;
     background-color: rgba(128, 128, 128, 0.637);
 
 }
 
 h1 {
-    width:90vw;
-    font-family: 
+    background-color: black;
+    width:100vw;
 
 }
+
+#recap {
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 90vw;
+
+}
+
+
 
 #block {
     background-color: rgba(0, 0, 0, 0.575);
     width: 45vw;
-    height: 60vh;
+    height: 80vh;
     border: 2px solid black;
     display:inline;
 
