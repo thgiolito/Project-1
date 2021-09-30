@@ -109,7 +109,7 @@ function createBeast(title, imageUrl) {
     beastImg.classList.add("beast-img");
     beast.appendChild(beastImg);
 
-    const beastName = document.createElement("h2");
+    const beastName = document.createElement("h3");
     beastName.classList.add("beast-name");
     beastName.innerHTML = title;
     beast.appendChild(beastName);
@@ -119,14 +119,65 @@ for (let i = 0; i < beastToDestroy.length; i++) {
     createBeast(beastToDestroy[i]["name"], beastToDestroy[i]["picture"]);
 }
 
-const beastDetail = document.querySelector(".beastDetail");
+const beastDetail = document.querySelector(".beast-detail");
 const beastclic = document.querySelector(".beast");
+const quitButton = document.querySelector(".quit-button");
 beastclic.addEventListener('click', function(){
     beastDetail.style.display = "flex"; 
     beasts.style.display = "none"; 
   })
 
-beastDetail.addEventListener('click', function(){
+quitButton.addEventListener('click', function(){
     beastDetail.style.display = "none"; 
     beasts.style.display = "flex"; 
   })  
+
+
+function createBeastCard(title, image, presentation, description) {
+    const beastDetail = document.createElement("div");
+    beastDetail.classList.add("beast-detail");
+    body.appendChild(beastDetail);
+
+    const beastDetailHeader = document.createElement("div");
+    beastDetailHeader.classList.add("beast-detail-header");
+    beastDetail.appendChild(beastDetailHeader);
+
+    const beastDetailName = document.createElement("h2");
+    beastDetailName.classList.add("beast-detail-name");
+    beastDetailName.innerHTML = title;
+    beastDetail.appendChild(beastDetailName);
+
+    const quitButton = document.createElement("div");
+    quitButton.classList.add("quit-button");
+    beastDetail.appendChild(quitButton);
+
+    const beastDetailImg = document.createElement("img");
+    beastDetailImg.style.backgroundImage = `url(${image})`;
+    beastDetailImg.classList.add("beast-detail-img");
+    beastDetail.appendChild(beastDetailImg);
+
+    const beastDetailTitle = document.createElement("h3");
+    beastDetailTitle.classList.add("beast-detail-title");
+    beastDetailTitle.innerHTML = "Description";
+    beastDetail.appendChild(beastDetailTitle);
+
+    const beastDetailDescription = document.createElement("p");
+    beastDetailDescription.classList.add("beast-detail-description");
+    beastDetailDescription.innerHTML = presentation;
+    beastDetail.appendChild(beastDetailDescription);
+    
+    const beastDetailTitle = document.createElement("h3");
+    beastDetailTitle.classList.add("beast-detail-title");
+    beastDetailTitle.innerHTML = "Protection";
+    beastDetail.appendChild(beastDetailTitle);
+
+    const beastDetailProtection = document.createElement("p");
+    beastDetailProtection.classList.add("beast-detail-protection");
+    beastDetailProtection.innerHTML = description;
+    beastDetail.appendChild(beastDetailProtection);
+}
+
+for (let i = 0; i < beastToDestroy.length; i++) {
+    createBeastCard(beastToDestroy[i]["name"], beastToDestroy[i]["detailPicture"], beastToDestroy[i]["description"], beastToDestroy[i]["protection"]);
+}
+

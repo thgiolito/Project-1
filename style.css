@@ -4,10 +4,10 @@ body {
     margin: auto;
     background-color: black;
     color: #72B62B;
+    font-family: Courier;
 }
 
 h1 {
-    font-family: Stencil;
     text-align: center;
     font-size: 6vw;
 }
@@ -53,11 +53,10 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: Impact;
-    font-size: 3vw ;
+    font-size: 4vw ;
 }
 
-.beastDetail {
+.beast-detail {
     width: 90vw;
     margin: auto;
     margin-bottom: 5vh;
@@ -71,23 +70,24 @@ h2 {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
-.beastDetailHeader{
+.beast-detail-header{
     display: flex;
     justify-content: end;
 }
 
-.beastDetailName{
+.beast-detail-name{
     flex-grow: 7;
 }
-.quitButton {
+.quit-button {
     background-size: cover;
     background-position: center;
     background-image: url("https://i.ibb.co/n8CV6yJ/TDclose.png");
     height: 5vw;
     width: 5vw;
+    margin: 0.75em;
 }
 
-.beastDetailImg {
+.beast-detail-img {
     width: 80vw;
     margin: auto;
     height: 60vw;
@@ -97,8 +97,7 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family: Impact;
-    font-size: 2vw ;
+    font-size: 3vw ;
 }
 
 p {
