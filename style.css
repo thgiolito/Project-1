@@ -1,13 +1,14 @@
 body {
 background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+font-family: Courier;
 
 
 }
 main {
-    margin-top: 20vh;
-    width : 90vw;
-    height: 90vh;
+    margin-top: 10vh;
+    width : 100vw;
+    height: 92vh;
     display:flex;
     flex-wrap:wrap;
     background-color: rgba(128, 128, 128, 0.637);
@@ -16,11 +17,13 @@ main {
 
 h1 {
     width:90vw;
+    font-family: 
 
 }
 
 #block {
-    width:30vw;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 45vw;
     height: 60vh;
     border: 2px solid black;
     display:inline;
