@@ -9,22 +9,21 @@ main {
     width : 90vw;
     height: 90vh;
     display:flex;
-    justify-content: space-between;
+    flex-wrap:wrap;
     background-color: rgba(128, 128, 128, 0.637);
 
 }
 
 h1 {
-    display: flex;
-    width:max-content;
+    width:90vw;
 
 }
 
 #block {
-    width:45vw;
+    width:30vw;
     height: 60vh;
-    display: flex;
     border: 2px solid black;
+    display:inline;
 
 }
 
@@ -35,7 +34,6 @@ form{
 }
 
 select {
-    display:inline-flex;
     border: 2px solid black;
     width: 100%;
 }
