@@ -5,16 +5,16 @@ body {
     background-color: black;
     color: #72B62B;
     font-family: Courier;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     font-size: 6vw;
 }
 
 .beasts {
     width: 90vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -34,6 +34,7 @@ h1 {
     height: 20vw;
     background-size: cover;
     background-position: center;
+    background-image: url("https://i.ibb.co/M2kb2y4/ImgTD1.png");
 }
 
 /* .beast-img:hover {
@@ -52,7 +53,6 @@ h1 {
 } */
 
 h2 {
-    text-align: center;
     font-size: 4vw ;
 }
 
@@ -60,8 +60,8 @@ h2 {
     width: 90vw;
     margin: auto;
     margin-bottom: 5vh;
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -96,6 +96,8 @@ h2 {
 }
 
 h3 {
+    margin: 1vw;
+    padding: 1vw;
     text-align: center;
     font-size: 3vw ;
 }
