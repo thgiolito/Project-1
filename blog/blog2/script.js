@@ -19,18 +19,26 @@ onglets.forEach(onglet => {
         if(onglets[i].getAttribute('data-anim')
         != index) {
             onglets[i].classList.remove('active')
+            const Pres = document.getElementById("OurBlog");
+            if (Pres.style.display === "block") {
+                Pres.style.display ="none";
+            } else {
+                Pres.style.display ="block"
+                }
+            }
         }
 
-    }
+    for(j = 0; j < onglets.length; j++){
+        if(onglets[j].getAttribute('data-anim')
+        != index){
+            const textBlog = document.getElementById("présentation");
+            if (textBlog.style.display === "none") {
+                textBlog.style.display ="block";
+            } else {
+                textBlog.style.display ="none"
+                }
 
-    for(j = 0; j < contenu.length; j++) {
-
-        if(contenu[j].getAttribute('data-anim') == index) {
-            contenu[j].classList.add('activeContenu');
-        } else {
-            contenu[j].classList.remove('activeContenu');
-        }
-    }
-
+            }
+        }  
     })
 })

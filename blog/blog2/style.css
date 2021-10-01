@@ -24,7 +24,8 @@ html {
 width: 100%;
 height: 15%;
 display: flex;
-border-bottom: 1px solid #333;
+border: 3px solid #333;
+background: lightskyblue;
 }
 
 .onglets {
@@ -36,6 +37,7 @@ border-bottom: 1px solid #333;
     font-size: 22px;
     font-weight: 700;
     cursor: pointer;
+    border: 2px solid #333;
 }
 
 .onglets:not(:nth-child(2)) {
@@ -46,7 +48,6 @@ border-bottom: 1px solid #333;
     height: 50%;
     width: 100%;
     position: relative;
-    opacity: 0;
 }
 
 .contenu p {
@@ -58,6 +59,9 @@ h1 {
     font-size: 18px;
 }
 
+#OurBlog {
+    display:none;
+}
 .contenu hr {
     width: 30%;
     height: 2px;
@@ -76,11 +80,4 @@ h1 {
     animation: fade 0.5s forwards;
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
