@@ -1,35 +1,66 @@
 body {
-background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
-font-family: Courier;
-width: 100vw;
-padding: 0;
-margin: auto;
-background-color: black;
-color: #72B62B;
+
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+    font-family: Courier;
+    width: 100vw;
+    height: 100vh;  
+    padding: 0;
+    margin: auto;
+    background-color: black;
+    color: #72B62B;
+    display: flex;
+    justify-content: center;
 }
 
 
 
 main {
-    margin-top: 10vh;
-    width : 100vw;
-    height: 92vh;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    background-color: rgba(128, 128, 128, 0.637);
 
+    margin-top: 10vh;
+    width : 90vw;
+    height: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.title {
+
+    background-color: black;
+    width:90vw;
+    height: 12vh;
+    font-family: Stencil;
+    font-size: 2vw;
+    box-shadow: #9DC41A 3px 0px 15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    background-color: black;
-    width:100vw;
-
+    margin: 0;
+    text-align: center;
+}
+h2 {
+    
+    font-family: Impact;
+    font-size: 3vw ;
+    display:flex;
+    flex-wrap:nowrap;
 }
 
 #recap {
-    background-color: black;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
     width: 90vw;
+    box-shadow: #9DC41A 3px 0px 15px;
+
 
 }
 
@@ -40,12 +71,25 @@ h1 {
     display: block;
 }
 
+#mainBlock {
 
+    box-shadow: #9DC41A 3px 0px 15px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 #block {
     background-color: rgba(0, 0, 0, 0.575);
-    width: 30vw;
-    height: 80vh;
-    border: 2px solid black;
+    width: 40vw;
+    height: 60vh;
+    border: 3px solid #9DC41A;
+    margin: 2vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
@@ -54,8 +98,46 @@ form{
 
 }
 
-select {
-    border: 2px solid black;
-    display:block;
+
+input  select {
+    color: red;
+    font-size: 2px;
+    display:flex;
+    width : 10vw;
+    flex-wrap: wrap;
 }
 
+
+.beastDetail {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: #9DC41A 3px 0px 15px;
+    background-color: #0f0905;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+
+p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    width: 40vw;
+    height: 6vh;
+    background-color: #72B62B;
+    color: black;
+    font-family: Stencil;
+    font-size: 4vw;
+}
