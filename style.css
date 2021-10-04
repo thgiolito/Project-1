@@ -1,6 +1,59 @@
+@media screen and (min-width: 800px) { 
+    h1 {
+        background-color: rgb(255, 255, 255);  
+    }
+    .beast {
+        width: 15vw;
+    }
+    .beast-img {
+        height: 15vw;
+    }
+    .beast-detail-body {
+        display: grid;
+        grid-template-rows: 10% 30% 10% 30% 15%;
+        grid-template-columns: 50% 50% ;
+        text-align: left;
+        justify-items: stretch;
+    }
+    .quit-button {
+        height: 3vw;
+        width: 3vw;
+    }
+    .beast-detail-img {
+        grid-area: 1 / 1 / 5 / 1;
+        margin: 0;
+        align-self: stretch;
+    }
+    #description {
+        grid-area: 1 / 2 / 1 / 2;
+        text-align: left;
+        font-size: 2vw;
+        padding: 0;
+    }
+    .beast-detail-description {
+        grid-area: 2 / 2 / 2 / 2;
+        margin: 1vw;
+        font-size: 1.5vw;
+    }
+    #protection {
+        grid-area: 3 / 2 / 3 / 2;
+        text-align: left;
+        font-size: 2vw;
+        padding: 0;
+    }
+    .beast-detail-protection {
+        grid-area: 4 / 2 / 4 / 2;
+        margin: 1vw;
+        font-size: 1.5vw;
+    }
+    .help-button {
+        grid-area: 5 / 2 / 5 / 2;
+    }
+  }
+
+
 body {
     width: 90vw;
-    padding: 0;
     margin: auto;
     background-color: black;
     color: #72B62B;
@@ -13,7 +66,7 @@ h1 {
 }
 
 .beasts {
-    width: 90vw;
+    width: 100%;
     margin-top: 5vh;
     display: flex;
     justify-content: center;
@@ -58,13 +111,11 @@ h2 {
 
 .beast-detail {
     width: 90vw;
-    margin: auto;
-    margin-bottom: 5vh;
-    /* display: flex; */
+    height: 90vh;
+    margin: 5vh auto;
     display: none;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: stretch;
     box-shadow: #9DC41A 3px 0px 15px;
     background-color: #0f0905;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -73,24 +124,60 @@ h2 {
 .beast-detail-header{
     display: flex;
     justify-content: end;
+    width: 100%;
+    height: 10%;
 }
 
 .beast-detail-name{
     flex-grow: 7;
+    margin: 2.5vw 0 2.5vw 10vw;
+    font-size: 3.5vh;
 }
+
 .quit-button {
     background-size: cover;
     background-position: center;
     background-image: url("https://i.ibb.co/n8CV6yJ/TDclose.png");
+    height: 30px;
+    width: 30px;
+    margin: 2.5vw;
+}
+
+.beast-detail-body {
+    margin: 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    height: 90%;
+}
+
+.beast-img-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vw;
+}
+
+.left-button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ibb.co/dm0CG97/TDleft.png");
+    height: 5vw;
+    width: 5vw;
+    margin: 0.75em;
+}
+
+.right-button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ibb.co/0QNV8sh/TDright.png");
     height: 5vw;
     width: 5vw;
     margin: 0.75em;
 }
 
 .beast-detail-img {
-    width: 80vw;
-    margin: auto;
-    height: 60vw;
+    width: 100%;
+    height: 40vh;
     background-size: cover;
     background-position: center;
 }
@@ -103,10 +190,8 @@ h3 {
 }
 
 p {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 0;
-    margin-bottom: 2vh;
+    margin: 0 10vw 2vh 10vw;
+    font-size: 10px;
 }
 
 button {
@@ -118,5 +203,5 @@ button {
     background-color: #72B62B;
     color: black;
     font-family: Stencil;
-    font-size: 4vw;
+    font-size: 3vh;
 }
