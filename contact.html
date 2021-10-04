@@ -18,7 +18,7 @@
         <section id="mainBlock">
             <article id="block">
                 <h2>Votre demande :</h2>
-                <form>
+                <form id="form">
                     <label for="firstName">Votre prénom :</label>
                     <input type="text" id="firstName" name="firstName">
                     <label for="lastName">Votre nom :</label>
@@ -28,7 +28,7 @@
                     <div></div>
 
                     <label for="monsters">Qui rôde dans votre maison ?</label>
-                    <select id="monsters" name="monsters">
+                    <select id="monsterType" name="monsters">
                         <option value="it">Il y a un clown étrange dans les environs.</option>
                         <option value="eggs">Quelqu'un a planté des oeufs étranges près de chez moi.</option>
                         <option value="spiders">Des araignées mutantes déciment ma famille !</option>
@@ -44,10 +44,10 @@
 
                     <label for="monstercount"> Combien sont-ils ?</label>
                     <select id="monstercount" name="monstercount">
-                        <option value="two">Il doit y en avoir un ou deux.</option>
-                        <option value="fiveplus">Il y a un petit groupe de ces horreurs.</option>
-                        <option value="tenplus">Ils sont presque une douzaine !</option>
-                        <option value="toomuch">Je n'arrive plus à les compter, aidez-moi !</option>
+                        <option value="2">Il doit y en avoir un ou deux.</option>
+                        <option value="5">Il y a un petit groupe de ces horreurs.</option>
+                        <option value="10">Ils sont presque une douzaine !</option>
+                        <option value="20">Je n'arrive plus à les compter, aidez-moi !</option>
                     </select>
 
                     <label for="userWhen">Quelle est l'urgence de votre situation ?</label>
@@ -69,4 +69,5 @@
         </section>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
