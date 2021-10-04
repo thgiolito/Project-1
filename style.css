@@ -9,10 +9,16 @@ body {
     background-color: black;
     color: #72B62B;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+section {
+    display: flex;
+    margin: 2vh;
 
+}
 
 main {
 
@@ -23,6 +29,7 @@ main {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -30,7 +37,7 @@ main {
 
     background-color: black;
     width:90vw;
-    height: 12vh;
+    height: 20vh;
     font-family: Stencil;
     font-size: 2vw;
     box-shadow: #9DC41A 3px 0px 15px;
@@ -57,8 +64,10 @@ h2 {
     flex-direction: column;
     display: flex;
     justify-content: center;
+    align-items:center;
     background-color: rgb(0, 0, 0);
-    width: 90vw;
+    width: 90%;
+    padding: 10px;
     box-shadow: #9DC41A 3px 0px 15px;
 
 
@@ -83,24 +92,30 @@ h2 {
 }
 #block {
     background-color: rgba(0, 0, 0, 0.575);
-    width: 40vw;
+    width: 90%;
     height: 60vh;
     border: 3px solid #9DC41A;
     margin: 2vh;
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
 
 }
 
-form{
+form {
     padding: 2px;
-
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
 }
 
 
 input  select {
-    color: red;
+    color: #9DC41A;
+    background-color: black;
     font-size: 2px;
     display:flex;
     width : 10vw;
@@ -108,12 +123,13 @@ input  select {
 }
 
 
+/* 
 .beastDetail {
     width: 90vw;
     margin: auto;
     margin-bottom: 5vh;
     display: flex;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -140,4 +156,4 @@ button {
     color: black;
     font-family: Stencil;
     font-size: 4vw;
-}
+} */
