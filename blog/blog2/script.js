@@ -1,24 +1,24 @@
-const onglets = document.querySelectorAll('.onglets');
-const contenu = document.querySelectorAll('.contenu');
+const tabs = document.querySelectorAll('.tabs');
+const content = document.querySelectorAll('.content');
 let index = 0;
 
-onglets.forEach(onglet => {
+tabs.forEach(tab => {
 
-    onglet.addEventListener('click', () => {
+    tab.addEventListener('click', () => {
 
-        if(onglet.classList.contains('active')){
+        if(tab.classList.contains('active')){
             return;
         } else {
-            onglet.classList.add('active');
+            tab.classList.add('active');
         }
-    index = onglet.getAttribute('data-anim');
+    index = tab.getAttribute('data-anim');
     console.log(index);
 
-    for(i = 0; i < onglets.length; i++) {
+    for(i = 0; i < tabs.length; i++) {
 
-        if(onglets[i].getAttribute('data-anim')
+        if(tabs[i].getAttribute('data-anim')
         != index) {
-            onglets[i].classList.remove('active')
+            tabs[i].classList.remove('active')
             const Pres = document.getElementById("OurBlog");
             if (Pres.style.display === "block") {
                 Pres.style.display ="none";
@@ -28,10 +28,10 @@ onglets.forEach(onglet => {
             }
         }
 
-    for(j = 0; j < onglets.length; j++){
-        if(onglets[j].getAttribute('data-anim')
+    for(j = 0; j < tabs.length; j++){
+        if(tabs[j].getAttribute('data-anim')
         != index){
-            const textBlog = document.getElementById("présentation");
+            const textBlog = document.getElementById("presentation");
             if (textBlog.style.display === "none") {
                 textBlog.style.display ="block";
             } else {
@@ -41,4 +41,4 @@ onglets.forEach(onglet => {
             }
         }  
     })
-})
+});
