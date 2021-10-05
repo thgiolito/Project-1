@@ -27,14 +27,18 @@ img {
     justify-content: space-around;
     align-items: center;
     font-size: 4vw ;
-    color: white;
+    color: #72b62b;
  
-    
-    
+}
 
-  }
+
+a {
+  color: #72b62b;
+}
+
   .presentation {
     box-shadow: #9dc41a 3px 0px 15px;
+    
   }
 
   .contact {
@@ -56,18 +60,21 @@ img {
   }
   .bloc-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-   margin-top: 30px;
-   margin-bottom: 30px;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   
     
   }
 
   #avis {
-    float: left;
+   
     color: black;
-     width: 40%;
-     height: 100px;
+   
+     height: 20vh;
+     width: 80vw;
       background-color: grey;
       box-shadow: #9DC41A 3px 0px 15px;
       display: flex;
@@ -77,12 +84,13 @@ img {
       
       
    }
-
+  
    #formulaire {
- float: right;
+ 
     color: black;
-    width: 40%;
-    height: 100px;
+ 
+    height: 20vh;
+    width: 80vw;
     background-color: green;
     box-shadow: #9DC41A 3px 0px 15px;
     display: flex;
@@ -90,10 +98,45 @@ img {
      align-items: center;
      
 
-
    }
+   action {
+    justify-content: center;
+    align-items: center;
+   }
+
   #div {
     display: inline-block;
   background-color: black;
   }
 
+  @media only screen and (min-width: 768px) {
+
+    .bloc-container {
+      width: 80vw;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #formulaire  {
+    width: 30vw;
+    justify-content: space-around;
+    align-items: space-around;
+    } 
+    #avis {
+      width: 30vw;
+      justify-content: space-around;
+      align-items: space-around;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  }

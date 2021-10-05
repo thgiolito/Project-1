@@ -20,17 +20,17 @@
 
 
     <div class="presentation">
-      <h2>Présentation</h2>
-
+      <h2><a href="index.html">Présentation</a></h2>
 
       <p1>Lorem ipsum dolor sit amet,
         consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p1>
+
     </div>
 
     <div class="contact">
-      <h2>Contact</h2>
+      <h2><a href="contact.html">Contact</a></h2>
       <p2>Lorem ipsum dolor sit amet,
         consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p2>
@@ -40,19 +40,39 @@
     <div class="bloc-container">
 
       <div id="avis">
-        <p>Avis</p>
-      </div>
+        <p3>Avis</p3>
 
-      <div id="formulaire">
-        <p>Formulaire</p>
+      </div>
+      <div id="formulaire" class="formulaire">
+        <h3>Formulaire</h3>
+        
+        <form action="/ma-page-de-traitement" method="post">
+          <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="mail">e-mail :</label>
+            <input type="email" id="mail" name="user_mail">
+          </div>
+          <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <input type="submit" value="Envoyer">
+        </form>
+
+
+
+
       </div>
     </div>
 
 
   </div>
- 
 
 
+  <script src="script.js"></script>
 
 </body>
 
