@@ -90,9 +90,8 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#block {
+#blockOne {
     background-color: rgba(0, 0, 0, 0.575);
-    width: 90%;
     height: 60vh;
     border: 3px solid #9DC41A;
     margin: 2vh;
@@ -104,7 +103,18 @@ h2 {
 
 }
 
-form {
+#blockTwo {
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 60vh;
+    border: 3px solid #9DC41A;
+    margin: 2vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#contactForm {
     padding: 2px;
     display:flex;
     justify-content: center;
