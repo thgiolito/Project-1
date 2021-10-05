@@ -2,16 +2,12 @@ const beastToDestroy = [
   {
     name: "Oeuf d'alien",
     picture: "./assets/alienEgg.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description: "Protège un infâme crabe surnommé calineur de visage qui sussure des 'Miss, t'es charmante' dès qu'une femme passe à proximité. Risque d'attaque faciale, s'accroche à l'aide de ses pattes arachnéennes en quémandant un zéro-six.",
     protection: "Curez-vous le nez ostensiblement, cela devrait les maintenir à distance un moment.",
   },
   {
     name: "Chupa cabra",
     picture: "./assets/chupacabra.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Créature fantastique sans poil ayant des yeux rouges et une bouche avec des crocs saillants vers le haut et vers le bas. Se nourrit en suçant le sang des animaux de ferme, en faisant des trous parfaitement circulaires dans le cou jusqu'au cervelet.",
     protection:
@@ -20,8 +16,6 @@ const beastToDestroy = [
   {
     name: "Data Analyst",
     picture: "./assets/dataAnalyst.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Responsable du recueil et de l’analyse de la donnée d’une entreprise, le data analyst communique avec ses pairs par télépathie et voue un culte au Big Data auquel il sacrifie des tables de données les soirs de pleine lune.",
     protection:
@@ -30,8 +24,6 @@ const beastToDestroy = [
   {
     name: "Zombaby",
     picture: "./assets/zombaby.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Créature rampante parfois équipée de bras, le zombaby est un être pleurnichard qui se nourrit de cerve-lait.",
     protection:
@@ -40,8 +32,6 @@ const beastToDestroy = [
   {
     name: "Arachnide",
     picture: "./assets/arachnide.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Créature extra-terrestre ovipare très agressive ressemblant à un insecte géant. Les arachnides vivent en communautés régies sous l'absolue dictature de leur reine et sont en conflit ouvert avec la Fédération terrienne.",
     protection:
@@ -50,8 +40,6 @@ const beastToDestroy = [
   {
     name: "Sadako",
     picture: "./assets/Sadako.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Esprit vengeur vêtu d'une chemise de nuit blanche et fuyant les salons de coiffure. Lorsqu'elle était humaine, elle fut assassinée et jetée dans un puits. Depuis, elle se demande ce qu'on a tous à lui mettre la rage.",
     protection:
@@ -60,8 +48,6 @@ const beastToDestroy = [
   {
     name: "Lego®",
     picture: "./assets/lego.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Petite brique de construction en plastique de couleur. Apparaît spontanément dans les foyer équipés d'enfants ou d'adulescents et se glisse insidieusement sous leurs pieds.",
     protection:
@@ -70,8 +56,6 @@ const beastToDestroy = [
   {
     name: "Noiraude",
     picture: "./assets/noiraude.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Petites boules de suie d'à peine quelques centimètres de diamètre que l'on retrouve généralement par petits paquets amassés. Elles n'ont pas de personnalité et peuvent être comparées à un groupe d'insectes.",
     protection:
@@ -80,8 +64,6 @@ const beastToDestroy = [
   {
     name: "Démogorgon",
     picture: "./assets/demogorgon.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Créature humanoïde grande et mince à la peau visqueuse. Ses membres digitigrades allongés se terminent par des griffes et sa tête s'ouvre sur une immense bouche entourée de pétales dentés sentant la pivoine.",
     protection:
@@ -90,8 +72,6 @@ const beastToDestroy = [
   {
     name: "Ça",
     picture: "./assets/ca.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Entité extraterrestre métamorphe éternelle et plus ancienne que l'univers prenant généralement la forme d'un clown. Egalement connue sous le nom de Pennywise, elle cible les enfants de manière cyclique.",
     protection:
@@ -100,8 +80,6 @@ const beastToDestroy = [
   {
     name: "Chucky",
     picture: "./assets/chucky.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Poupée possédée par l'esprit d'un tueur en série grâce à un rituel vaudou. Fasciné par les grands couteaux de cuisine.",
     protection:
@@ -110,8 +88,6 @@ const beastToDestroy = [
   {
     name: "Chtulhu",
     picture: "./assets/cthulhu.jpg",
-    hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
-    detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
       "Gigantesque créature extraterrestre de forme vaguement humanoïde à tête de seiche, tentacules de pieuvre et ailes de dragon. Théoriquement endormie depuis des millénaires dans la cité de Phoo à R'lyeh engloutie sous l'océan Pacifique. Souvent accompagnée de culturistes.",
     protection:
