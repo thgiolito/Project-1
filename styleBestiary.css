@@ -26,6 +26,7 @@ h1 {
     display: flex;
     flex-direction: column;
     box-shadow: #9DC41A 3px 0px 15px;
+    background-color: #141414;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
@@ -52,8 +53,8 @@ h2 {
     flex-direction: column;
     justify-content: flex-end;
     box-shadow: #9DC41A 3px 0px 15px;
-    background-color: #0f0905;
-    background-image: "./assets/zQuitButton.png";
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 .beast-detail-header{
@@ -67,12 +68,13 @@ h2 {
     flex-grow: 7;
     margin: 2.5vw 0 2.5vw 10vw;
     font-size: 4vh;
+    height: 30px;
 }
 
 .quit-button {
     background-size: cover;
     background-position: center;
-    background-image: url("https://i.ibb.co/n8CV6yJ/TDclose.png");
+    background-image: url("./assets/zQuitButton.png");
     height: 30px;
     width: 30px;
     margin: 2.5vw;
@@ -86,43 +88,19 @@ h2 {
     height: 90%;
 }
 
-.beast-img-button {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10vw;
-}
-
-.left-button {
-    background-size: cover;
-    background-position: center;
-    background-image: url("https://i.ibb.co/dm0CG97/TDleft.png");
-    height: 5vw;
-    width: 5vw;
-    margin: 0.75em;
-}
-
-.right-button {
-    background-size: cover;
-    background-position: center;
-    background-image: url("https://i.ibb.co/0QNV8sh/TDright.png");
-    height: 5vw;
-    width: 5vw;
-    margin: 0.75em;
-}
-
 .beast-detail-img {
     width: 90%;
     height: 40vh;
     background-size: cover;
     background-position: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h3 {
     margin: 1vw;
-    padding: 1vw;
+    padding: 1vw 0;
     text-align: center;
-    font-size: 2vh ;
+    font-size: 3vw ;
 }
 
 p {
@@ -134,7 +112,7 @@ button {
     margin: auto;
     margin-bottom: 2vh;
     border-radius: 5px;
-    width: 40vw;
+    width: 60%;
     height: 6vh;
     background: linear-gradient(#72B62B, #5da312);
     color: black;
@@ -155,7 +133,9 @@ button:hover {
         height: 15vw;
     }
     h3 {
-        margin: 0;
+        margin: 1vw;
+        padding: 0;
+        font-size: 2.5vh;
     }
     .beast-detail-body {
         display: grid;
@@ -179,7 +159,7 @@ button:hover {
     }
     .beast-detail-description {
         grid-area: 2 / 2 / 2 / 2;
-        margin: 1vw;
+        margin: 1vw 2vw 1vw 1vw;
         font-size: 2.5vh;
     }
     #protection {
@@ -190,10 +170,15 @@ button:hover {
     }
     .beast-detail-protection {
         grid-area: 4 / 2 / 4 / 2;
-        margin: 1vw;
+        margin: 1vw 2vw 1vw 1vw;
         font-size: 2.5vh;
     }
     .help-button {
         grid-area: 5 / 2 / 5 / 2;
+        width: 60%;
+        margin: auto;
+    }
+    button {
+        width: 100%;
     }
   }
