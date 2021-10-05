@@ -30,6 +30,12 @@ form.onsubmit = function(event){
     teamNeeded.innerHTML = `${monsters[monsterType].intervenants * monsterNumber/2}`;
     intervenantsResult.appendChild(teamNeeded);
 
+    const dateResult = document.getElementById('dateResult');
+    const dateNeeded = document.createElement('div');
+
+    const priceResult = document.getElementById('priceResult');
+    priceResult.innerHTML = `${monsters[monsterType].price * monsterNumber}`;
+   
 
 
     console.log(monsterNumber);
