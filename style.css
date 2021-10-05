@@ -1,57 +1,3 @@
-@media screen and (min-width: 800px) { 
-    h1 {
-        background-color: rgb(255, 255, 255);  
-    }
-    .beast {
-        width: 15vw;
-    }
-    .beast-img {
-        height: 15vw;
-    }
-    .beast-detail-body {
-        display: grid;
-        grid-template-rows: 10% 30% 10% 30% 15%;
-        grid-template-columns: 50% 50% ;
-        text-align: left;
-        justify-items: stretch;
-    }
-    .quit-button {
-        height: 3vw;
-        width: 3vw;
-    }
-    .beast-detail-img {
-        grid-area: 1 / 1 / 5 / 1;
-        margin: 0;
-        align-self: stretch;
-    }
-    #description {
-        grid-area: 1 / 2 / 1 / 2;
-        text-align: left;
-        font-size: 2vw;
-        padding: 0;
-    }
-    .beast-detail-description {
-        grid-area: 2 / 2 / 2 / 2;
-        margin: 1vw;
-        font-size: 1.5vw;
-    }
-    #protection {
-        grid-area: 3 / 2 / 3 / 2;
-        text-align: left;
-        font-size: 2vw;
-        padding: 0;
-    }
-    .beast-detail-protection {
-        grid-area: 4 / 2 / 4 / 2;
-        margin: 1vw;
-        font-size: 1.5vw;
-    }
-    .help-button {
-        grid-area: 5 / 2 / 5 / 2;
-    }
-  }
-
-
 body {
     width: 90vw;
     margin: auto;
@@ -62,12 +8,13 @@ body {
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 4vh;
+    margin: 3vh auto;
 }
 
 .beasts {
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,7 +34,6 @@ h1 {
     height: 20vw;
     background-size: cover;
     background-position: center;
-    background-image: url("https://i.ibb.co/M2kb2y4/ImgTD1.png");
 }
 
 /* .beast-img:hover {
@@ -115,10 +61,10 @@ h2 {
     margin: 5vh auto;
     display: none;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: flex-end;
     box-shadow: #9DC41A 3px 0px 15px;
     background-color: #0f0905;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-image: "./assets/zQuitButton.png";
 }
 
 .beast-detail-header{
@@ -131,7 +77,7 @@ h2 {
 .beast-detail-name{
     flex-grow: 7;
     margin: 2.5vw 0 2.5vw 10vw;
-    font-size: 3.5vh;
+    font-size: 4vh;
 }
 
 .quit-button {
@@ -145,9 +91,9 @@ h2 {
 
 .beast-detail-body {
     margin: 0;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
     height: 90%;
 }
 
@@ -176,17 +122,18 @@ h2 {
 }
 
 .beast-detail-img {
-    width: 100%;
+    width: 90%;
     height: 40vh;
     background-size: cover;
     background-position: center;
+    margin: auto;
 }
 
 h3 {
     margin: 1vw;
     padding: 1vw;
     text-align: center;
-    font-size: 3vw ;
+    font-size: 2vh ;
 }
 
 p {
@@ -200,8 +147,64 @@ button {
     border-radius: 5px;
     width: 40vw;
     height: 6vh;
-    background-color: #72B62B;
+    background: linear-gradient(#72B62B, #5da312);
     color: black;
     font-family: Stencil;
     font-size: 3vh;
 }
+
+button:hover {
+    background: linear-gradient(#a7eb5f, #72B62B);
+}
+
+@media screen and (min-width: 800px) { 
+    .beast {
+        width: 15vw;
+        margin: 2%;
+    }
+    .beast-img {
+        height: 15vw;
+    }
+    h3 {
+        margin: 0;
+    }
+    .beast-detail-body {
+        display: grid;
+        grid-template-rows: 10% 30% 10% 30% 15%;
+        grid-template-columns: 50% 50% ;
+        text-align: left;
+        justify-items: stretch;
+    }
+    .beast-detail-header{
+        height: 15%;
+    }
+    .beast-detail-img {
+        grid-area: 1 / 1 / 5 / 1;
+        height: 100%;
+    }
+    #description {
+        grid-area: 1 / 2 / 1 / 2;
+        text-align: left;
+        font-size: 3vh;
+        padding: auto;
+    }
+    .beast-detail-description {
+        grid-area: 2 / 2 / 2 / 2;
+        margin: 1vw;
+        font-size: 2.5vh;
+    }
+    #protection {
+        grid-area: 3 / 2 / 3 / 2;
+        text-align: left;
+        font-size: 3vh;
+        padding: auto;
+    }
+    .beast-detail-protection {
+        grid-area: 4 / 2 / 4 / 2;
+        margin: 1vw;
+        font-size: 2.5vh;
+    }
+    .help-button {
+        grid-area: 5 / 2 / 5 / 2;
+    }
+  }

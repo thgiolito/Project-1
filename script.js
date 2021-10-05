@@ -1,7 +1,7 @@
 const beastToDestroy = [
   {
     name: "Oeuf d'alien",
-    picture: "https://st.depositphotos.com/thumbs/1795881/image/2347/23476086/api_thumb_450.jpg",
+    picture: "./assets/alienEgg.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description: "Protège un infâme crabe surnommé calineur de visage qui sussure des 'Miss, t'es charmante' dès qu'une femme passe à proximité. Risque d'attaque faciale, s'accroche à l'aide de ses pattes arachnéennes en quémandant un zéro-six.",
@@ -9,7 +9,7 @@ const beastToDestroy = [
   },
   {
     name: "Chupa cabra",
-    picture: "https://st3.depositphotos.com/thumbs/1695244/image/33600/336005272/api_thumb_450.jpg",
+    picture: "./assets/chupacabra.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -19,7 +19,7 @@ const beastToDestroy = [
   },
   {
     name: "Data Analyst",
-    picture: "https://st2.depositphotos.com/thumbs/1010613/image/5216/52164615/api_thumb_450.jpg",
+    picture: "./assets/dataAnalyst.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -29,7 +29,7 @@ const beastToDestroy = [
   },
   {
     name: "Zombaby",
-    picture: "https://st4.depositphotos.com/thumbs/1006593/image/27793/277937394/api_thumb_450.jpg",
+    picture: "./assets/zombaby.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -39,7 +39,7 @@ const beastToDestroy = [
   },
   {
     name: "Arachnide",
-    picture: "https://st4.depositphotos.com/thumbs/5946506/image/20003/200038184/api_thumb_450.jpg",
+    picture: "./assets/arachnide.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -49,7 +49,7 @@ const beastToDestroy = [
   },
   {
     name: "Sadako",
-    picture: "https://st3.depositphotos.com/thumbs/1006542/image/12890/128904568/api_thumb_450.jpg",
+    picture: "./assets/Sadako.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -59,7 +59,7 @@ const beastToDestroy = [
   },
   {
     name: "Lego®",
-    picture: "https://images.assetsdelivery.com/compings_v2/korolkoff/korolkoff2002/korolkoff200200065.jpg",
+    picture: "./assets/lego.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -69,7 +69,7 @@ const beastToDestroy = [
   },
   {
     name: "Noiraude",
-    picture: "https://images.assetsdelivery.com/compings_v2/kouzins/kouzins1903/kouzins190300016.jpg",
+    picture: "./assets/noiraude.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -79,7 +79,7 @@ const beastToDestroy = [
   },
   {
     name: "Démogorgon",
-    picture: "https://st3.depositphotos.com/thumbs/7477192/image/17597/175972944/api_thumb_450.jpg",
+    picture: "./assets/demogorgon.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -89,7 +89,7 @@ const beastToDestroy = [
   },
   {
     name: "Ça",
-    picture: "https://images.unsplash.com/photo-1601513445498-5dbffc8d5d5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    picture: "./assets/ca.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -99,7 +99,7 @@ const beastToDestroy = [
   },
   {
     name: "Chucky",
-    picture: "https://images.unsplash.com/photo-1611787640592-ebf78080d96e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    picture: "./assets/chucky.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
@@ -109,7 +109,7 @@ const beastToDestroy = [
   },
   {
     name: "Chtulhu",
-    picture: "https://img2.freepng.fr/20180511/bxw/kisspng-the-rats-in-the-walls-the-call-of-cthulhu-the-cats-5af61c86287cd0.6832657115260785981658.jpg",
+    picture: "./assets/cthulhu.jpg",
     hiddenPicture: "https://i.ibb.co/BNwhCDP/ImgTD2.png",
     detailPicture: "https://i.ibb.co/M2kb2y4/ImgTD1.png",
     description:
