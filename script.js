@@ -19,11 +19,21 @@ const monsters = {
 
 form.onsubmit = function(event){
     event.preventDefault();
+    
     const monsterNumber = document.querySelector('#monstercount').value;
-    console.log(monsterNumber);
     const monsterType = document.querySelector('#monsterType').value;
-    console.log(monsterType);
     const userWhen = document.querySelector('#userWhen').value;
+
+    const intervenantsResult = document.getElementById('intervenantsResult');
+    const teamNeeded = document.createElement('div');
+    teamNeeded.classList.add('result');
+    teamNeeded.innerHTML = `${monsters[monsterType].intervenants * monsterNumber/2}`;
+    intervenantsResult.appendChild(teamNeeded);
+
+
+
+    console.log(monsterNumber);
+    console.log(monsterType);
     console.log(userWhen);
     console.log(monsters[monsterType].price * monsterNumber);
     console.log(monsters[monsterType].intervenants * monsterNumber/2);
