@@ -189,6 +189,7 @@ body{
     background: #72B62B;
     position: relative;
     z-index: 1;
+  
  }
  #overflow {
     width: 100%;
@@ -221,15 +222,7 @@ body{
     height: 100%;
     color: #fff;
  }
- #slides .slide_1 {
-    background: #00171F;
- }
- #slides .slide_2 {
-    background: #003459;
- }
- #slides .slide_3 {
-    background: #007EA7;
- }
+
  #controls {
     margin: -280px 0 0 0;
     width: 100%;
@@ -291,6 +284,7 @@ body{
  #slide4:checked ~ #bullets label:nth-child(4) {
     background: rgb(189, 186, 21);
  }
+
  @media screen and (max-width: 800px) {
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(3),
