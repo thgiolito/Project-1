@@ -236,6 +236,8 @@ body{
     height: 50px;
     z-index: 3;
     position: relative;
+    
+ 
  }
  #controls label {
     transition: opacity 0.2s ease-out;
@@ -243,6 +245,8 @@ body{
     width: 50px;
     height: 50px;
     opacity: .4;
+    
+    
     
  }
  #controls label:hover {
@@ -256,6 +260,7 @@ body{
     float:right;
     margin: 0 -50px 0 0;
     display: block;
+   
     
  }
  #slide1:checked ~ #controls label:nth-last-child(2),
@@ -266,9 +271,10 @@ body{
     float:left;
     margin: 0 0 0 -50px;
     display: block;
+    
  }
  #bullets {
-    margin: 150px 0 0;
+    margin: 280px 0 0;
     text-align: center;
  }
  #bullets label {
@@ -276,14 +282,14 @@ body{
     width: 10px;
     height: 10px;
     border-radius:100%;
-    background: #ccc;
+    background: #72B62B;
     margin: 0 10px;
  }
  #slide1:checked ~ #bullets label:nth-child(1),
  #slide2:checked ~ #bullets label:nth-child(2),
  #slide3:checked ~ #bullets label:nth-child(3),
  #slide4:checked ~ #bullets label:nth-child(4) {
-    background: #444;
+    background: rgb(189, 186, 21);
  }
  @media screen and (max-width: 800px) {
     #slide1:checked ~ #controls label:nth-child(2),
