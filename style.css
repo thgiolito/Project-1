@@ -1,0 +1,99 @@
+  
+body {
+  width: 80vw;
+  padding: 0;
+  margin: auto;
+  background-color: black;
+  color: black; 
+  font-family: Courier;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: auto;
+ 
+
+  
+}
+  h1 {
+  
+    background-color: grey;
+   font-size: 6vw;
+}
+  
+  h2 {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4vw ;
+    color: white;
+ 
+    
+    
+
+  }
+  .presentation {
+    box-shadow: #9dc41a 3px 0px 15px;
+  }
+
+  .contact {
+    box-shadow: #9dc41a 3px 0px 15px;
+  }
+  p1 {
+    color: #72b62b;
+    font-size: 80%;
+    
+  }
+  p2{
+    color: #72b62b;
+    font-size: 80%;
+
+  }
+  .separator {
+    height: vw;
+  
+  }
+  .bloc-container {
+    display: flex;
+    justify-content: space-around;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  
+    
+  }
+
+  #avis {
+    float: left;
+    color: black;
+     width: 40%;
+     height: 100px;
+      background-color: grey;
+      box-shadow: #9DC41A 3px 0px 15px;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+
+      
+      
+   }
+
+   #formulaire {
+ float: right;
+    color: black;
+    width: 40%;
+    height: 100px;
+    background-color: green;
+    box-shadow: #9DC41A 3px 0px 15px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     
+
+
+   }
+  #div {
+    display: inline-block;
+  background-color: black;
+  }
+
