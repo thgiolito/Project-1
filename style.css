@@ -29,27 +29,16 @@ h1 {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
+.beast:hover {
+    box-shadow: #c3eb40 3px 0px 30px;
+}
+
 .beast-img {
     width: 100%;
     height: 20vw;
     background-size: cover;
     background-position: center;
 }
-
-/* .beast-img:hover {
-    display: none;
-}
-
-.hover-img { 
-    z-index: 2;
-}
-
-.hover-img:hover { 
-    display: block; 
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-} */
 
 h2 {
     font-size: 4vw ;

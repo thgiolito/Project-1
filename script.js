@@ -177,19 +177,3 @@ quitButton.addEventListener("click", function () {
   beasts.style.display = "flex";
   bestiaryTitle.style.display = "block";
 });
-
-// const leftButton = document.querySelector(".left-button");
-// for (let i = 0; i < beastToDestroy.length; i++) {
-//   leftButton.addEventListener("click", function () {
-//     const item = beastToDestroy[i-1]
-//     fillBeastCard(item.name, item.picture, item.description, item.protection)
-//   })
-// }
-
-// const rightButton.document.querySelector(".right-button");
-// for (let i = 0; i < beastToDestroy.length; i++) {
-//   rightButton.addEventListener("click", function () {
-//     const item = beastToDestroy[i-1]
-//     fillBeastCard(item.name, item.picture, item.description, item.protection)
-//   })
-// }
