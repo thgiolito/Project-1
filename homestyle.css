@@ -1,6 +1,6 @@
   
 body {
-  width: 80vw;
+  width: 100vw;
   padding: 0;
   margin: auto;
   background-color: black;
@@ -129,7 +129,7 @@ a {
 
 
 /* ---------------------------------FOOTER--------------------------------------------------------------- */
-
+/*
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -138,7 +138,7 @@ a {
 
 
 .content {
-  /* grow shrink basis */
+  
   flex: 1 0 auto;
 }
 .content p {
@@ -171,13 +171,13 @@ footer {
   margin: 2vh;
 }
 
-/* contact */
+
 
 p {
   padding: 5px 0;
 }
 
-/* Services */
+
 
 
 .services-list,
@@ -197,7 +197,7 @@ p {
 }
 
 
-/* Medias */
+
 
 .media-list {
   position: relative;
@@ -216,7 +216,7 @@ p {
 }
 
 
-/* Media queries */
+
 
 @media screen and (min-width: 768px) {
   footer {
@@ -234,7 +234,7 @@ p {
       padding-bottom: 20px;
   }
 }
-
+*/
 
 /* -------------------------------------------- NAVBAR ----------------------------- */
 
@@ -256,6 +256,7 @@ p {
   width: 100%;
   background: black; 
   align-items: center;
+  height: 10vh;
 
 
 
@@ -269,7 +270,9 @@ p {
 }
 
 .navbar ul li{
-  display: inline-block;
+  /*display: inline-block;*/
+  justify-content: center;
+    align-items: center;
 
 }
 
@@ -298,7 +301,7 @@ p {
   padding: 20px 20px;
   margin: 0px 40px 0px 0px;
   border-radius: 5px;
-  height: 10vh;
+  height: 8vh;
   background-color: #72B62B;
   font-family: Stencil;
   font-size: 2vw;
@@ -313,7 +316,7 @@ p {
   padding: 20px 20px;
   margin: 0px 40px 0px 0px;
   border-radius: 5px;
-  height: 10vh;
+  height: 8vh;
   background-color: #72B62B;
   font-family: Stencil;
   font-size: 2vw;
@@ -327,10 +330,9 @@ p {
   
  
   padding: 30px 20px;
-  margin: 10px 10px 10px 150px;
   border-radius: 5px;
   width: 20vw;
-  height: 14vh;
+  height: 10vh;
   background-color: #72B62B;
   color:black;
   font-family: Stencil;
@@ -338,6 +340,8 @@ p {
   text-decoration: none;
   text-align: center;
   display: none;
+  justify-content: center;
+    align-items: center;
 
   
 }
@@ -347,8 +351,9 @@ p {
 
 .logo img {
   float:left;
-  width: 200px;
-  padding: 10px 10px;
+ margin: auto;
+  height: 10vh;
+
    
 }
 
@@ -386,6 +391,7 @@ p {
 @media only screen and (min-width:576px){
   .navbar .desktop-list {
        display: flex;
+       justify-content: :space-around;
        
    }
    .desktop-list li :hover {
@@ -421,6 +427,7 @@ p {
 @media only screen and (min-width:768px){
  .navbar .desktop-list {
       display: flex;
+      justify-content: space-around;
       
   }
   .desktop-list li :hover {
@@ -430,15 +437,15 @@ p {
   }
   .ctn{
       display: flex;
-      padding: 65px 20px;
+      
   }
   .testa{
       display: flex;
-      padding: 45px 20px;
+      
   }
   .testb{
       display: flex;
-      padding: 45px 20px;
+    
   }
   .mobile-list{
       display: none;
@@ -453,6 +460,7 @@ p {
 @media only screen and (min-width:992px){
   .navbar .desktop-list {
        display: flex;
+       justify-content: space-around;
        
    }
    .desktop-list li :hover {
@@ -462,6 +470,8 @@ p {
    }
    .ctn{
        display: flex;
+       justify-content: center;
+       align-items: center;
    }
    .testa{
        display: flex;
@@ -485,7 +495,7 @@ p {
 
 #slider {
   margin: 20px auto;
-  width: 900px;
+  width: 1200px;
   max-width: 100%;
   text-align: center;
 }
@@ -502,10 +512,10 @@ p {
   background: #72B62B;
   position: relative;
   z-index: 1;
-  max-width: calc(100% - 140px);
+  max-width: calc(100vw- 20vw);
   margin: 0 auto;
   margin: 20px auto;
-  width: 600px;
+  width: 80vw;
 }
 
 
