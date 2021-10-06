@@ -1,18 +1,17 @@
   
 body {
-  width: 80vw;
-  padding: 0;
-  margin: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: black; 
   font-family: Courier;
   text-align: center;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
+
   h1 {
     background-color: grey;
    font-size: 6vw;
@@ -25,7 +24,21 @@ img {
     color: #72b62b;
 }
 h3 {
-    margin: 0;
+    margin: 4vh;
+    font-size: xx-large;
+}
+label{
+  font-size: x-large;
+}
+input{
+  min-width: 60%;
+    min-height: 3vh;
+    font-size: x-large;
+    font-weight: bold;
+}
+textarea{
+  min-width: 60%;
+    min-height: 3vh;
 }
 a {
   color: #72b62b;
@@ -49,38 +62,36 @@ a {
   .bloc-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     margin-top: 4vh;
     margin-bottom: 4vh;
   
     
   }
-
+  
   #avis {
    
     color: black;
-   
-      height: 30vh;
+    
+      min-height: 30vh;
       width: 80vw;
       background-color: grey;
       box-shadow: #9DC41A 3px 0px 15px;
       display: flex;
       flex-direction: column;
       align-items: center; 
+      justify-content: flex-start;
     
    }
-  #avisContainer {
-    display: flex;
-    max-width: 90%;
-  }
+
    #formulaire {
  
     color: black;
  
     height: 30vh;
     width: 80vw;
-    background-color: green;
+    background-color: #72b62b;
     box-shadow: #9DC41A 3px 0px 15px;
     display: flex;
     flex-direction: column;
@@ -98,18 +109,21 @@ a {
      justify-content: center;
 
    }
-   
-  #div {
-    display: inline-block;
-  background-color: black;
+   #accueil {
+     width: 100%;
+   }
+
+  #resultForm {
+    display: flex;
   }
 
   @media only screen and (min-width: 768px) {
 
     .bloc-container {
-      width: 80vw;
+      width: 100%;
       flex-direction: row;
       justify-content: space-around;
+      align-items: space-around;
     }
     #formulaire  {
     width: 35vw;
@@ -120,7 +134,6 @@ a {
     #avis {
       width: 35vw;
       height: 30vh;
-      justify-content: space-around;
       align-items: space-around;
 
     }
@@ -130,11 +143,7 @@ a {
 
 /* ---------------------------------FOOTER--------------------------------------------------------------- */
 
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 
 .content {
@@ -238,12 +247,7 @@ p {
 
 /* -------------------------------------------- NAVBAR ----------------------------- */
 
-*{
 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 
@@ -695,5 +699,3 @@ img {
 
 
 
-
-  
