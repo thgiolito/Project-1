@@ -1,5 +1,6 @@
 body {
     width: 100vw;
+    height: 110vh;
     margin: auto;
     background-color: black;
     color: #72B62B;
@@ -418,3 +419,42 @@ body {
         width: 100%;
     }
   }
+
+/* ----------FOOTER--FOOTER--FOOTER----------  */
+
+footer {
+    display: flex ;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    height: 9vh;
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    color: #72b62b;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    font-size: 8px;
+    z-index: -1;
+}
+
+svg {
+    width: 3vw;
+    margin: 0.5vw;
+    vertical-align: middle;
+}
+
+.bloc {
+    margin: 1vw;
+    height: 7vh;
+    vertical-align: text-top;
+}
+
+.bloc h3 {
+    margin-bottom: 1vh;
+}
+
+.bloc ul {
+    list-style-type: none;
+}
