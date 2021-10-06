@@ -1,35 +1,38 @@
-/* -------------------------------NAVBAR -------------------------------------*/
+/* ----------------NavBar---------------  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 .navbar .desktop-list {
     display: none;
-}
-
+  }
+  
 .navbar{
     display:flex;
     width: 100%;
     background: black; 
     align-items: center;
-
-
-
+    height: 10vh;
 }
-
-
+  
 .navbar ul{
     flex:1;
     text-align: right;
-  
 }
-
+  
 .navbar ul li{
-    display: inline-block;
-  
+    /*display: inline-block;*/
+    justify-content: center;
+    align-items: center; 
 }
-
+  
 .navbar ul li a {
     margin: 5px;
     text-decoration: none;
-   }
+}
+
 .navbar ul li i{
     color :black; 
     justify-content: space-around;
@@ -43,47 +46,39 @@
     height:50px;
     text-align: center;
     border-radius:5px;
-
-}
-
-
+}  
+  
 .testa  {
     padding: 20px 20px;
     margin: 0px 40px 0px 0px;
     border-radius: 5px;
-    height: 10vh;
+    height: 8vh;
     background-color: #72B62B;
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
     display: none;
     text-align: center;
-    
-   
-    
 }
+
 .testb  {
     padding: 20px 20px;
     margin: 0px 40px 0px 0px;
     border-radius: 5px;
-    height: 10vh;
+    height: 8vh;
     background-color: #72B62B;
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
     display: non;
     text-align: center;
-    
 }
-
+  
 .ctn{
-    
-   
     padding: 30px 20px;
-    margin: 10px 10px 10px 150px;
     border-radius: 5px;
     width: 20vw;
-    height: 14vh;
+    height: 10vh;
     background-color: #72B62B;
     color:black;
     font-family: Stencil;
@@ -91,20 +86,20 @@
     text-decoration: none;
     text-align: center;
     display: none;
-  
-    
+    justify-content: center;
+    align-items: center;
 }
+
 .ctn:hover{
     color: rgb(189, 186, 21);
 }
-
+  
 .logo img {
     float:left;
-    width: 200px;
-    padding: 10px 10px;
-     
+    margin: auto;
+    height: 10vh;
 }
-
+  
 .mobile-list{
     display: block;
     color :#72B62B; 
@@ -119,33 +114,57 @@
     font-size: 10px;
     padding: 0 0 0 5px;
 }
+
 .mobile-list ul li {
     font-size: 30px;
     color :black;
     text-align: center;
-    
-     
 }
+
 .mobile-list li:hover i{
     color: yellow;
-    
 }
+  
+/* TABLET & DESKTOP BAR CONFIG*/
 
-
-
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
-
-@media only screen and (min-width:768px){
-   .navbar .desktop-list {
+@media only screen and (min-width:576px){
+    .navbar .desktop-list {
         display: flex;
-        
+        justify-content: :space-around;
+         
     }
     .desktop-list li :hover {
         color: rgb(189, 186, 21);
-        
-        
+    }
+    .ctn{
+        display: flex;
+        padding: 12px 20px;
+    }
+    .testa{
+        display: flex;
+        padding: 10px 20px;
+    }
+    .testb{
+        display: flex;
+        padding: 10px 20px;
+    }
+    .mobile-list{
+        display: none;
+    }
+    .navbar ul li a {
+        color:black;
+        text-decoration: none;
+    }
+}
+     
+  
+@media only screen and (min-width:768px){
+    .navbar .desktop-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .desktop-list li :hover {
+        color: rgb(189, 186, 21);
     }
     .ctn{
         display: flex;
@@ -158,15 +177,40 @@
     }
     .mobile-list{
         display: none;
-    
     }
-   
     .navbar ul li a {
         color:black;
         text-decoration: none;
     }
 }
-    
+
+@media only screen and (min-width:992px){
+    .navbar .desktop-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .desktop-list li :hover {
+        color: rgb(189, 186, 21);
+    }
+    .ctn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testa{
+        display: flex;
+    }
+    .testb{
+        display: flex;
+    }
+    .mobile-list{
+         display: none;
+    }
+    .navbar ul li a {
+        color:black;
+        text-decoration: none;
+    }
+}
 
 
 /* -------------------------------CONTACT -------------------------------------*/
