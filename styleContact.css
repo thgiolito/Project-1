@@ -327,43 +327,9 @@ input  select {
     }
     
 
-
-
-
-
-}
-
-/* 
-.beastDetail {
-    width: 90vw;
-    margin: auto;
-    margin-bottom: 5vh;
-    display: flex;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: #9DC41A 3px 0px 15px;
-    background-color: #0f0905;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 
-p {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 0;
-    margin-bottom: 2vh;
-}
+/* -------------------------------- FOOTER ------------------------ */
 
-button {
-    margin: auto;
-    margin-bottom: 2vh;
-    border-radius: 5px;
-    width: 40vw;
-    height: 6vh;
-    background-color: #72B62B;
-    color: black;
-    font-family: Stencil;
-    font-size: 4vw;
-} */
+
