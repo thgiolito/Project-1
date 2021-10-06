@@ -37,7 +37,7 @@ body{
 
 .navbar ul li a {
     margin: 5px;
-       
+    text-decoration: none;
    }
 .navbar ul li i{
     color :black; 
@@ -47,7 +47,6 @@ body{
     background-color:#72B62B; 
     display: block;
     padding: 8px 15px;
-    text-decoration: none;
     margin: 0px 5px 0px 0px;
     width:70px;
     height:50px;
@@ -127,13 +126,13 @@ body{
     justify-content: space-around;
     display: flex;
     font-size: 10px;
-    text-decoration: none;
+    padding: 0 0 0 5px;
 }
 .mobile-list ul li {
     font-size: 30px;
     color :black;
     text-align: center;
-    text-decoration: none;
+    
      
 }
 .mobile-list li:hover i{
