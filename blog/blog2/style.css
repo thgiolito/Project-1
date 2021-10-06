@@ -58,7 +58,7 @@
     h1, h2 {
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: 2px;
         font-size: 14px;
     }
     
@@ -115,12 +115,25 @@
         margin: 2vw 0;
     }
     
+    .track {
+        box-shadow: #9DC41A 3px 0px 15px;
+        margin: 4vw;
+        width: 90%;
+        background-color: #141414;
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    }
+
+    .track article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .track img {
-        float: left;
-        margin: 5px;
         height: 30vw;
         width: 30vw;
         object-fit: cover;
+        margin: 2vh auto;
         border-style: groove;
         border-color: #72B62B;
     }
@@ -149,6 +162,11 @@
            height: 20vw;
            width: 20vw;
         }
+
+        .track img {
+            height: 20vw;
+            width: 20vw;
+         }
 
         .ourTeam p{
             height: 20vw;
