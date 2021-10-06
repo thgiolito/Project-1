@@ -1,9 +1,4 @@
 /* ----------------NavBar---------------  */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
 .navbar .desktop-list {
     display: none;
@@ -14,7 +9,6 @@
     width: 100%;
     background: black; 
     align-items: center;
-    height: 10vh;
 }
   
 .navbar ul{
@@ -130,7 +124,7 @@
 @media only screen and (min-width:576px){
     .navbar .desktop-list {
         display: flex;
-        justify-content: :space-around;
+        justify-content: space-around;
          
     }
     .desktop-list li :hover {
@@ -227,7 +221,7 @@ body {
     color: #72B62B;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -239,9 +233,8 @@ section {
 
 main {
 
-    margin-top: 10vh;
     width : 90vw;
-    height: 100%;
+    height: 80%;
     display:flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -355,6 +348,10 @@ input  select {
 
 /* --------------------------------RESPONSIVE DESIGN FOR DESKTOP------------------------------------------- */
 
+body {
+    height: 110vh;
+}
+
 @media (min-width: 768px) {
 
     #blockTwo {
@@ -373,107 +370,41 @@ input  select {
 
 }
 
-
-/* -------------------------------- FOOTER ------------------------ */
-
-
-.content {
-    /* grow shrink basis */
-    flex: 1 0 auto;
-}
-.content p {
-    padding: 2vw 10vw 5vw;
-    text-align: justify;
-}
+/* ------------------------------------------- FOOTER ------------------------------- */
 
 footer {
     display: flex ;
+    position: absolute;
     bottom: 0; 
-    flex-shrink: 0;
-    border-top: 1px dashed #000;
     width: 100%;
-    background: rgb(15, 1, 1);
+    height: 9vh;
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     color: #72b62b;
-    height: 20vh;
-}
-.content-footer {    
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
     max-width: 100%;
-    flex-wrap: nowrap;       
-    
+    flex-wrap: nowrap;
+    font-size: 8px;
+    z-index: -1;
+}
+
+svg {
+    width: 3vw;
+    margin: 0.5vw;
+    vertical-align: middle;
 }
 
 .bloc {
-    margin: 2vh;
-    display: flex;
-    flex-direction: column;
-    max-height: 20vh;
+    margin: 1vw;
+    height: 7vh;
+    vertical-align: text-top;
 }
 
-/* contact */
-
-p {
-    padding: 5px 0;
+.bloc h3 {
+    margin-bottom: 1vh;
 }
 
-/* Services */
-
-
-.services-list,
-.schedule-list,
-.media-list {
+.bloc ul {
     list-style-type: none;
-}
-.services-list li {
-    padding: 2px 0;
-}
-.services-list a {
-    text-decoration: none;
-    color: #72b62b;
-}
-.services-list a:hover {
-    color: rgb(3,3,3);
-}
-
-
-/* Medias */
-
-.media-list {
-    position: relative;
-    right: 10px;
-}
-.media-list svg {
-    width: 30px;
-    margin: 0.5vw;
-}
-.media-list a {
-    text-decoration: none;
-    color: #72b62b;
-    display: flex;
-    align-items: center;
-    font-size: 2vw;
-}
-
-
-/* Media queries */
-
-@media screen and (min-width: 768px) {
-    footer {
-        height: 20vh;
-
-    }
-    .bloc {
-        flex-basis: 20%;
-    }
-
-    .footer-contact h3,
-    .footer-services h3,
-    .footer-schedule h3,
-    .footer-medias h3 {
-        padding-bottom: 20px;
-    }
 }
