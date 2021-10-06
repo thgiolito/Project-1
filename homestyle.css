@@ -552,34 +552,38 @@ p {
 }
 
 #controls {
-  width: 100%;
+  width: 98%;
   height: 50px;
   z-index: 3;
   position: relative;
-  margin: -150px 0 0 0;
+  margin: -150px 0 0 3px;
+  
 
 }
 #controls label {
-  transition: opacity 0.2s ease-out;
+  
   display: none;
   width: 50px;
   height: 50px;
-  opacity: .4;
+  
   
   
   
 }
 #controls label:hover {
   opacity: 1;
+ 
 }
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-  float:right;
-  margin: 0;
-  display: block;
+    background: url(https://i.ibb.co/C5vBy91/TDright2.png) no-repeat;
+    float:right;
+    margin: 0;
+    display: block;
+    background-size: contain;
+    background-position: right;
  
   
 }
@@ -587,10 +591,11 @@ p {
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(4),
 #slide4:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-  float:left;
-  margin: 0;
-  display: block;
+    background: url(https://i.ibb.co/94rXzB8/TDleft2.png) no-repeat;
+    float:left;
+    margin: 0;
+    display: block;
+    background-size: contain;
   
 }
 #bullets {
