@@ -1,159 +1,6 @@
-/* ------------------------------------navbar----------------------------------------------- */
-
-.navbar{
-
-    display:flex;
-    width: 100%;
-    background: black; 
-    align-items: center;
-}
-
-
-.navbar ul{
-    flex:1;
-    text-align: right;
-}
-
-.navbar ul li{
-    display: inline-block;
-  
-}
-
-.navbar ul li a {
-    color:black;
-    text-decoration: none;
-}
-.navbar ul li i{
-    color :black; 
-    justify-content: space-around;
-    display: flex;
-    font-size: 8vw;
-    background-color:#72B62B; 
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
-    margin: 0px 5px 0px 0px;
-    width:70px;
-    height:50px;
-    text-align: center;
-    border-radius:5px;
-
-}
-
-
-.testa  {
-    padding: 20px 20px;
-    margin: 0px 40px 0px 0px;
-    border-radius: 5px;
-    height: 10vh;
-    background-color: #72B62B;
-    font-family: Stencil;
-    font-size: 2vw;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
-    
-   
-    
-}
-.testb  {
-    padding: 20px 20px;
-    margin: 0px 40px 0px 0px;
-    border-radius: 5px;
-    height: 10vh;
-    background-color: #72B62B;
-    font-family: Stencil;
-    font-size: 2vw;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
-    
-}
-
-.ctn{
-    
-   
-    padding: 30px 20px;
-    margin: 10px 10px 10px 150px;
-    border-radius: 5px;
-    width: 20vw;
-    height: 14vh;
-    background-color: #72B62B;
-    color:black;
-    font-family: Stencil;
-    font-size: 3vw;
-    text-decoration: none;
-    text-align: center;
-    
-  
-    
-}
-
-.logo img {
-    float:left;
-    width: 200px;
-    padding: 10px 10px;
-     
-}
-
-
-.mobile-list{
-    display: none;
-
-}
-
-
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
-
-@media only screen and (max-width:768px){
-       .navbar .desktop-list {
-        display: none;
-    }
-    .ctn{
-        display: none;
-    }
-    .testa{
-        display: none;
-    }
-    .testb{
-        display: none;
-    }
-    .mobile-list{
-        display: block;
-        color :#72B62B; 
-        bottom: 0;
-        left: 0;
-        position: fixed;
-        align-items: center;
-        background-color: black;
-        width: 100%;
-        justify-content: space-around;
-        display: flex;
-        font-size: 10px;
-    }
-    .mobile-list ul li {
-        font-size: 30px;
-        color :black;
-        text-align: center;
-         
-    }
-   .mobile-list li:hover i{
-       color: yellow;
-       
-    
-      
-
-   }
-
-   .navbar ul li a {
-    margin: 5px;
-       
-   }
-}
 
 /* -------------------------------CONTACT -------------------------------------*/
+
 body {
 
     background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
@@ -255,6 +102,7 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    min-width: 80%;
 
 
 }
@@ -264,10 +112,11 @@ h2 {
     height: 60vh;
     border: 3px solid #9DC41A;
     margin: 2vh;
-    display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    display: none;
+    min-width: 80%;
 }
 
 #contactForm {
@@ -288,6 +137,31 @@ input  select {
     flex-wrap: wrap;
 }
 
+
+
+/* --------------------------------RESPONSIVE DESIGN FOR DESKTOP------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    #blockTwo {
+        display: flex;
+        min-width: 40%;
+        max-width: 80%;
+        width: 40vh;
+    }
+
+    #blockOne {
+        min-width : 40%;
+        max-width: 80%;
+        width: 40vh;
+    }
+    
+
+
+
+
+
+}
 
 /* 
 .beastDetail {

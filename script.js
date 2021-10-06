@@ -1,4 +1,7 @@
 const form = document.querySelector("#contactForm");
+const blockTwo = document.querySelector('#blockTwo');
+const blockOne = document.getElementById('blockOne');
+
 const monsters = {
     it: {
         intervenants: 3,
@@ -19,7 +22,6 @@ const monsters = {
 
 form.onsubmit = function(event){
     event.preventDefault();
-    
     const monsterNumber = document.querySelector('#monstercount').value;
     const monsterType = document.querySelector('#monsterType').value;
     const userWhen = document.querySelector('#userWhen').value;
@@ -43,6 +45,12 @@ form.onsubmit = function(event){
 
     const priceResult = document.getElementById('priceResult');
     priceResult.innerHTML = `${monsters[monsterType].price * monsterNumber}`;
+
+    if (window.screen.width <= 768) {
+    blockTwo.style.display = 'flex';
+    blockOne.style.display= 'none';
+    }
+    else {}
    
 
     console.log(result);
