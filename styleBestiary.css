@@ -1,5 +1,5 @@
 body {
-    width: 90vw;
+    width: 100vw;
     margin: auto;
     background-color: black;
     color: #72B62B;
@@ -15,8 +15,8 @@ h1 {
 /* ----------Bestaire : Miniatures----------  */
 
 .beasts {
-    width: 100%;
-    margin-top: 3vh;
+    width: 95%;
+    margin: 3vh auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -43,8 +43,11 @@ h1 {
     background-position: center;
 }
 
-h2 {
-    font-size: 4vw ;
+.beast-name {
+    margin: 1vw;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: 3vw ;
 }
 
 /* ----------Fiches détaillées créature----------  */
@@ -100,19 +103,19 @@ h2 {
     margin: 0 auto;
 }
 
-h3 {
+.beast-detail-title {
     margin: 1vw;
     padding: 1vw 0;
     text-align: center;
     font-size: 3vw ;
 }
 
-p {
+.beast-detail-body p {
     margin: 0 10vw 2vh 10vw;
     font-size: 10px;
 }
 
-button {
+.help-button button {
     background: linear-gradient(#72B62B, #5da312);
     color: black;
     font-family: Stencil;
@@ -120,7 +123,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.help-button button:hover {
     background: linear-gradient(#a7eb5f, #72B62B);
 }
 
@@ -136,19 +139,24 @@ button:hover {
     /* ----------Bestaire : Miniatures----------  */
     .beast {
         width: 15vw;
-        margin: 2%;
+        margin: 1% 2%;
+    }
+    .beasts {
+        width: 90%;
     }
     .beast-img {
         height: 15vw;
     }
+    .beast-name {
+        padding: 0.5vw 0;
+        font-size: 1.5vw ;
+    }
     /* ----------Fiches détaillées créature----------  */
+    .beast-detail-header{
+        height: 15%;
+    }
     .beast-detail-name{
         margin: 2.5vw 0 2.5vw 6vw;
-    }
-    h3 {
-        margin: 1vw;
-        padding: 0;
-        font-size: 2.5vh;
     }
     .beast-detail-body {
         display: grid;
@@ -157,34 +165,32 @@ button:hover {
         text-align: left;
         justify-items: stretch;
     }
-    .beast-detail-header{
-        height: 15%;
-    }
     .beast-detail-img {
         grid-area: 1 / 1 / 5 / 1;
         height: 100%;
     }
-    #description {
-        grid-area: 1 / 2 / 1 / 2;
+    .beast-detail-title {
+        margin: 1vw;
+        padding: 0;
+        font-size: 2.5vh;
         text-align: left;
         font-size: 3vh;
-        padding: auto;
+    }
+    .beast-detail-body p {
+        margin: 1vw 2vw 1vw 1vw;
+        font-size: 2.5vh;
+    }
+    #description {
+        grid-area: 1 / 2 / 1 / 2;
     }
     .beast-detail-description {
         grid-area: 2 / 2 / 2 / 2;
-        margin: 1vw 2vw 1vw 1vw;
-        font-size: 2.5vh;
     }
     #protection {
         grid-area: 3 / 2 / 3 / 2;
-        text-align: left;
-        font-size: 3vh;
-        padding: auto;
     }
     .beast-detail-protection {
         grid-area: 4 / 2 / 4 / 2;
-        margin: 1vw 2vw 1vw 1vw;
-        font-size: 2.5vh;
     }
     .help-button {
         grid-area: 5 / 2 / 5 / 2;
