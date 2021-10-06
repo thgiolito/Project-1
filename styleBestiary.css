@@ -7,10 +7,6 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 4vh;
-    margin: 2vh auto;
-}
 /* ----------------NavBar---------------  */
 *{
     margin: 0;
@@ -227,6 +223,11 @@ h1 {
 
 /* ----------Bestaire : Miniatures----------  */
 
+.bestiary-title {
+    font-size: 4vh;
+    margin: 2vh auto;
+}
+
 .beasts {
     width: 95%;
     margin: 3vh auto;
@@ -267,8 +268,8 @@ h1 {
 
 .beast-detail {
     width: 90vw;
-    height: 90vh;
-    margin: 5vh auto;
+    height: 75vh;
+    margin: 2vh auto;
     display: none;
     flex-direction: column;
     justify-content: flex-end;
@@ -350,6 +351,9 @@ h1 {
 @media screen and (min-width: 768px) { 
     
     /* ----------Bestaire : Miniatures----------  */
+    .bestiary-title {
+        margin-top: 8vh;
+    }
     .beast {
         width: 15vw;
         margin: 1% 2%;
