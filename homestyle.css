@@ -30,6 +30,9 @@ img {
     color: #72b62b;
  
 }
+  h3 {
+    margin: 0;
+  }
 
 
 a {
@@ -46,7 +49,7 @@ a {
   }
   p1 {
     color: #72b62b;
-    font-size: 80%;
+    font-size: large;
     
   }
   p2{
@@ -73,37 +76,44 @@ a {
    
     color: black;
    
-     height: 20vh;
-     width: 80vw;
+      height: 30vh;
+      width: 80vw;
       background-color: grey;
       box-shadow: #9DC41A 3px 0px 15px;
       display: flex;
-      justify-content: center;
-     align-items: center;
-
-      
-      
+      flex-direction: column;
+      align-items: center; 
+    
    }
-  
+  #avisContainer {
+    display: flex;
+    max-width: 90%;
+  }
    #formulaire {
  
     color: black;
  
-    height: 20vh;
+    height: 30vh;
     width: 80vw;
     background-color: green;
     box-shadow: #9DC41A 3px 0px 15px;
     display: flex;
-    justify-content: center;
-     align-items: center;
-     
-
-   }
-   action {
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
    }
 
+   form {
+     width: 90%;
+     max-height: 90%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+   }
+   
   #div {
     display: inline-block;
   background-color: black;
@@ -117,26 +127,29 @@ a {
       justify-content: space-around;
     }
     #formulaire  {
-    width: 30vw;
+    width: 35vw;
+    height: 30vh;
     justify-content: space-around;
     align-items: space-around;
     } 
     #avis {
-      width: 30vw;
+      width: 35vw;
+      height: 30vh;
       justify-content: space-around;
       align-items: space-around;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
   }
+
+
+ 
+
+
+
+
+
+
+
+
+
+  
