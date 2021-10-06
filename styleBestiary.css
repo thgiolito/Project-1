@@ -12,6 +12,8 @@ h1 {
     margin: 3vh auto;
 }
 
+/* ----------Bestaire : Miniatures----------  */
+
 .beasts {
     width: 100%;
     margin-top: 3vh;
@@ -44,6 +46,8 @@ h1 {
 h2 {
     font-size: 4vw ;
 }
+
+/* ----------Fiches détaillées créature----------  */
 
 .beast-detail {
     width: 90vw;
@@ -109,28 +113,37 @@ p {
 }
 
 button {
-    margin: auto;
-    margin-bottom: 2vh;
-    border-radius: 5px;
-    width: 60%;
-    height: 6vh;
     background: linear-gradient(#72B62B, #5da312);
     color: black;
     font-family: Stencil;
     font-size: 3vh;
+    border-radius: 5px;
 }
 
 button:hover {
     background: linear-gradient(#a7eb5f, #72B62B);
 }
 
+.help-button-content {
+    margin: auto;
+    margin-bottom: 2vh;
+    width: 60%;
+    height: 6vh;
+}
+
 @media screen and (min-width: 768px) { 
+    
+    /* ----------Bestaire : Miniatures----------  */
     .beast {
         width: 15vw;
         margin: 2%;
     }
     .beast-img {
         height: 15vw;
+    }
+    /* ----------Fiches détaillées créature----------  */
+    .beast-detail-name{
+        margin: 2.5vw 0 2.5vw 6vw;
     }
     h3 {
         margin: 1vw;
@@ -178,7 +191,7 @@ button:hover {
         width: 60%;
         margin: auto;
     }
-    button {
+    .help-button-content {
         width: 100%;
     }
   }
