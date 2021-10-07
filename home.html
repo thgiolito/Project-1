@@ -2,127 +2,126 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="homestyle.css" />
-  <link rel="stylesheet" href="icon/css/all.css">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="homestyle.css" />
+   <link rel="stylesheet" href="icon/css/all.css">
 </head>
 
+
 <body>
-  <nav class="navbar">
-    <div class="logo">
-        <a href="#"><img src="logo.png" alt="logo"></a>
-    </div>
-    <ul class="desktop-list">
-       <!--<li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li> -->
-       <li class="testa"><a href="#">Bestiaire</a></li> 
-       <li class="testb"><a href="#">L'entreprise</a></li> 
-    </ul>
-
-       <a class="ctn" href="#">Contact</a>
-
-    <ul class="mobile-list">
-        <li><a href="#"><i class="fa fa-fw fa-home"></i></a></li>  
-        <li><a href="#"><i class="fas fa-pastafarianism"></i></a></li>
-        <li><a href="#"><i class="fas fa-users"></i></a></li> 
-        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-     </ul>
+   <nav class="navbar">
+      <div class="logo">
+          <a href="home.html"><img src="./assets/TDlogo.png" alt="logo"></a>
+      </div>
+      <ul class="desktop-list">
+         <li class="testa"><a href="bestiary.html">Bestiaire</a></li> 
+         <li class="testb"><a href="blog.html">L'entreprise</a></li> 
+      </ul>
+      <a class="ctn" href="contact.html">Contact</a>
+      <ul class="mobile-list">
+          <li><a href="home.html"><i class="fa fa-fw fa-home"></i></a></li>
+          <li><a href="bestiary.html"><i class="fas fa-pastafarianism"></i></a></li>
+          <li><a href="blog.html"><i class="fas fa-users"></i></a></li> 
+          <li><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
+      </ul>
   </nav>
-  
-  <div id="slider">
-    <input type="radio" name="slider" id="slide1" checked>
-    <input type="radio" name="slider" id="slide2">
-    <input type="radio" name="slider" id="slide3">
-    <input type="radio" name="slider" id="slide4">
-    <div id="slides">
-       <div id="overflow">
-          <div class="inner">
-             <div class="slide slide_1">
-                <div class="slide-content">
-                   <img src="fantasy3.jpg" width="870" height="600" alt="fant4" />
-                </div>
-             </div>
-             <div class="slide slide_2">
-                <div class="slide-content">
-                   <img src="fantasy2.jpg" width="870" height="600"alt="fant2" />
-                </div>
-             </div>
-             <div class="slide slide_3">
-                <div class="slide-content">
-                   <img src="fantasy3.jpg" width="870" height="600" alt="fant3" />
-                </div>
-             </div>
-             <div class="slide slide_4">
-                <div class="slide-content">
-                   <img src="fantasy1.jpg" width="870" height="600" alt="fant1" />
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <div id="controls">
-       <label for="slide1"></label>
-       <label for="slide2"></label>
-       <label for="slide3"></label>
-       <label for="slide4"></label>
-    </div>
-    <div id="bullets">
-       <label for="slide1"></label>
-       <label for="slide2"></label>
-       <label for="slide3"></label>
-       <label for="slide4"></label>
-    </div>
- </div> 
-  <div id="acceuil">
-    <div class="presentation">
-      <h2><a href="index.html">Présentation</a></h2>
-      <p1>Venez découvrir notre équipe de choc pour régler tous vos problèmes...</p1>
-    </div>
+   <div id="acceuil">
+      <div class="presentation">
+         <h2><a href="index.html">Présentation</a></h2>
+         <p id="p1">Si vous découvrez une présence de nuisibles au sein de votre foyer, il vous faudra agir le plus tôt mais
+            surtout le plus efficacement possible pour empêcher la prolifération de ces derniers. Si toutes vos
+            tentatives destinées à éradiquer leur présence restent infructueuses, le dernier recours consistera à faire
+            intervenir notre entreprise experte.</p>
+      </div>
 
-    <div class="contact">
-      <h2><a href="contact.html">Contact</a></h2>
-      <p2>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p2>
-    </div>
-
-
-    <div class="bloc-container">
-
-      <div id="avis">
-        <h3 id="avisContainer">Avis</h3>
-        <div id='resultForm'></div>
-        
+      <div class="contact">
+         <h2><a href="contact.html">Contact</a></h2>
+         <p id="p2">On vous débarrasse des nuisibles dès aujourd'hui.
+            N'hésitez pas à nous contacter pour planifier un rendez-vous le plus rapidement possible !</p>
       </div>
 
 
-      <div id="formulaire" class="formulaire">
-        <h3 id="avisContainer">Formulaire</h3>
+      <div class="bloc-container">
 
-        <form  id='innerForm'>
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="user_name">
+         <div id="avis">
+            <div class="avisContainer">Avis
+               <div id='resultForm'></div>
 
-          <label for="mail">e-mail :</label>
-          <input type="email" id="mail" name="user_mail">
-
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="user_message"></textarea>
-
-          <input type="submit" value="Envoyer">
-        </form>
+            </div>
+         </div>
 
 
+         <div id="formulaire" class="formulaire">
+            <div class="theFormulaire">Formulaire
 
+               <form id='innerForm'>
+                  <label for="name">Nom :</label>
+                  <input type="text" id="name" name="user_name">
 
+                  <label for="mail">e-mail :</label>
+                  <input type="email" id="mail" name="user_mail">
+
+                  <label for="msg">Message :</label>
+                  <textarea id="msg" name="user_message"></textarea>
+
+                  <input type="submit" value="Envoyer">
+               </form>
+            </div>
+         </div>
       </div>
-    </div>
 
 
-  </div>
- 
+   </div>
+
+
+<footer>
+   <div class="bloc footer-services">
+      <h3>Services</h3>
+      <ul class="services-list">
+         <li><a href="https://static.gofugyourself.com/uploads/2018/07/giphy-1532996884.gif"
+               class="footer-link">Tracking</a></li>
+         <li><a href="https://media0.giphy.com/media/fwc2FKpbUoGDm9sgQn/200.gif" class="footer-link">Destroying</a></li>
+         <li><a href="https://c.tenor.com/3sgpmeZC2mYAAAAC/tartiflette.gif" class="footer-link">Tartifletting</a></li>
+      </ul>
+   </div>
+   <div class="bloc footer-contact">
+      <h3>Rester en contact</h3>
+      <p>44 Rue Alphonse Penaud, Paris</p>
+      <p>supportclient@contact.com</p>
+      <p>01 36 68 68 68</p>
+   </div>
+   <div class="bloc footer-medias">
+      <h3>Nos réseaux</h3>
+      <ul class="media-list">
+         <li><a href="https://www.facebook.com/ghostbuster.ghostbuster.524" class="footer-link">
+               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                  class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                     d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                  </path>
+               </svg>
+               Facebook/T&D</a>
+         </li>
+         <li>
+            <a href="https://www.instagram.com/ghostbustersfrance/?hl=fr" class="footer-link">
+               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                  class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                     d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+               </svg>
+               Instagram/T&D</a>
+         </li>
+      </ul>
+   </div>
+   </div>
+</footer>
 </body>
-
 <script src="homescript.js"></script>
 </html>
+
+

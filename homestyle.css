@@ -16,6 +16,7 @@ body {
     background-color: grey;
    font-size: 6vw;
 }
+
   h2 {
     display: flex;
     justify-content: space-around;
@@ -23,9 +24,14 @@ body {
     font-size: 4vw ;
     color: #72b62b;
 }
-h3 {
+.avisContainer {
     margin: 4vh;
     font-size: xx-large;
+}
+.theFormulaire {
+  margin: 4vh;
+  font-size: xx-large;
+
 }
 label{
   font-size: x-large;
@@ -33,7 +39,7 @@ label{
 input{
   min-width: 60%;
     min-height: 3vh;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 textarea{
@@ -49,14 +55,16 @@ a {
 .contact {
     box-shadow: #9dc41a 3px 0px 15px;
   }
-  p1 {
+
+  #p1 {
     color: #72b62b;
     font-size: large;
     
   }
-  p2{
+
+  #p2{
     color: #72b62b;
-    font-size: 80%;
+    font-size: large;
 
   }
   .bloc-container {
@@ -100,7 +108,7 @@ a {
 
    }
 
-   form {
+   #form {
      width: 90%;
      max-height: 90%;
      display: flex;
@@ -139,113 +147,13 @@ a {
     }
   }
 
-
-
-/* ---------------------------------FOOTER--------------------------------------------------------------- */
-
-
-
-
-.content {
-  
-  flex: 1 0 auto;
-}
-.content p {
-  padding: 2vw 10vw 5vw;
-  text-align: justify;
-}
-
-footer {
-  bottom: 0;
-  height: 5vh;
-  flex-shrink: 1;
-  border-top: 1px dashed #000;
-  width: 100%;
-  background: rgb(15, 1, 1);
-  color: #72b62b;
-}
-
-.content-footer {    
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: 16px;
-  max-width: 100%;
-  flex-wrap: nowrap;       
-  
-}
-
-.bloc {
-  margin: 2vh;
-}
-
-
-
-p {
-  padding: 5px 0;
-}
-
-
-
-
-.services-list,
-.schedule-list,
-.media-list {
-  list-style-type: none;
-}
-.services-list li {
-  padding: 2px 0;
-}
-.services-list a {
-  text-decoration: none;
-  color: #72b62b;
-}
-.services-list a:hover {
-  color: rgb(3,3,3);
-}
-
-
-
-
-.media-list {
-  position: relative;
-  right: 10px;
-}
-.media-list svg {
-  width: 30px;
-  margin: 0.5vw;
-}
-.media-list a {
-  text-decoration: none;
-  color: #72b62b;
-  display: flex;
-  align-items: center;
-  font-size: 2vw;
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-  footer {
-      height: 20vh;
-
-  }
-  .bloc {
-      flex-basis: 20%;
-  }
-
-  .footer-contact h3,
-  .footer-services h3,
-  .footer-schedule h3,
-  .footer-medias h3 {
-      padding-bottom: 20px;
-  }
-}
-
-
 /* -------------------------------------------- NAVBAR ----------------------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 
@@ -395,7 +303,7 @@ p {
 @media only screen and (min-width:576px){
   .navbar .desktop-list {
        display: flex;
-       justify-content: :space-around;
+       justify-content: space-around;
        
    }
    .desktop-list li :hover {
@@ -425,7 +333,7 @@ p {
        color:black;
        text-decoration: none;
    }
-}
+  }
    
 
 @media only screen and (min-width:768px){
@@ -666,6 +574,7 @@ img {
       margin: 110px 0 0;
       text-align: center;
 }
+}
 @media screen and (min-width: 992px) {
   
 
@@ -705,9 +614,75 @@ img {
   }
 
 }
- 
+/* ----------FOOTER--FOOTER--FOOTER----------  */
 
+footer {
 
+  display: flex ;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  height: 9vh;
+  background-color: #141414;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png%22");
+  color: #72b62b;
+  font-size: 8px;
+  /* margin-top: 10vh;*/ 
+}
+
+svg {
+  width: 2vh;
+  margin: 0.3vw;
+  vertical-align: middle;
+}
+
+.bloc {
+  margin: 1vw;
+  height: 7vh;
+  vertical-align: text-top;
+}
+
+.bloc h3 {
+  margin-bottom: 1vh;
+}
+
+.bloc ul {
+  list-style-type: none;
+}
+
+.footer-link {
+  color: #72b62b;
+  cursor: pointer;
+  text-decoration: none;
+
+.footer-link :hover {
+  color: #9DC41A;
+  font: bold;
+}
+
+@media screen and (min-width: 768px) { 
+  footer {
+      height: 15vh;
+      font-size: 12px;
+  }
+  body {
+      height: 100vh;
+  }
+  svg {
+      width: 2vh;
+  }
+  .bloc {
+      margin: 0.2vh;
+      height: 12vh;
+      vertical-align: text-top;
+  }
+  .footer-services li ,
+  .footer-contact p {
+      margin: 0.4vh;
+  }
+}
 
 
 
