@@ -89,7 +89,7 @@ body {
     border-radius: 5px;
     width: 20vw;
     height: 10vh;
-    background-color: #72B62B;
+    background: linear-gradient(#72B62B, #5da312);
     color:black;
     font-family: Stencil;
     font-size: 3vw;
@@ -101,7 +101,7 @@ body {
 }
 
 .ctn:hover{
-    color: rgb(189, 186, 21);
+    background: linear-gradient(#a7eb5f, #72B62B);
 }
   
 .logo img {
@@ -249,6 +249,7 @@ body {
 
 .beast:hover {
     box-shadow: #c3eb40 3px 0px 30px;
+    cursor: pointer;
 }
 
 .beast-img {
@@ -302,6 +303,10 @@ body {
     margin: 2.5vw;
 }
 
+.quit-button:hover {
+    cursor: pointer;
+}
+
 .beast-detail-body {
     margin: 0;
     display: flex;
@@ -340,6 +345,7 @@ body {
 
 .help-button button:hover {
     background: linear-gradient(#a7eb5f, #72B62B);
+    cursor: pointer;
 }
 
 .help-button-content {
@@ -455,6 +461,17 @@ svg {
 
 .bloc ul {
     list-style-type: none;
+}
+
+.footer-link {
+    color: #72b62b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #9DC41A;
+    font: bold;   
 }
 
 @media screen and (min-width: 768px) { 
