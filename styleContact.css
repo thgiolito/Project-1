@@ -383,6 +383,13 @@ h2 {
     min-width: 80%;
 }
 
+#contentBlockTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
 
 #contactForm {
 
