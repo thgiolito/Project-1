@@ -121,7 +121,7 @@ body {
     justify-content: space-around;
     display: flex;
     font-size: 10px;
-    margin-bottom : 0;
+    border: 5px solid black;
     z-index: 1;
 }
 
@@ -434,6 +434,7 @@ footer {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     color: #72b62b;
     font-size: 8px;
+    /* margin-top: 10vh; */
 }
 
 svg {
