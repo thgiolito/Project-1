@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <link rel="stylesheet" href="homestyle.css" />
+   <link rel="stylesheet" href="homestyle.css" >
    <link rel="stylesheet" href="icon/css/all.css">
 </head>
 
@@ -13,7 +13,7 @@
 <body>
    <nav class="navbar">
       <div class="logo">
-          <a href="home.html"><img src="./assets/TDlogo.png" alt="logo"></a>
+          <a href="home.html"><img src="logo.png" alt="logo"></a>
       </div>
       <ul class="desktop-list">
          <li class="testa"><a href="bestiary.html">Bestiaire</a></li> 
@@ -25,9 +25,56 @@
           <li><a href="bestiary.html"><i class="fas fa-pastafarianism"></i></a></li>
           <li><a href="blog.html"><i class="fas fa-users"></i></a></li> 
           <li><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
-      </ul>
-  </nav>
-   <div id="acceuil">
+         </ul>
+      </nav>
+      <div id="accueil">
+
+  <div id="slider">
+   <input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                  <img src="fantasy3.jpg" width="870" height="600" alt="fant4" />
+               </div>
+            </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+                  <img src="fantasy2.jpg" width="870" height="600"alt="fant2" />
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+                  <img src="fantasy3.jpg" width="870" height="600" alt="fant3" />
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+                  <img src="fantasy1.jpg" width="870" height="600" alt="fant1" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div> 
+  
+      
       <div class="presentation">
          <h2><a href="index.html">Présentation</a></h2>
          <p id="p1">Si vous découvrez une présence de nuisibles au sein de votre foyer, il vous faudra agir le plus tôt mais
@@ -35,26 +82,19 @@
             tentatives destinées à éradiquer leur présence restent infructueuses, le dernier recours consistera à faire
             intervenir notre entreprise experte.</p>
       </div>
-
+   
       <div class="contact">
          <h2><a href="contact.html">Contact</a></h2>
          <p id="p2">On vous débarrasse des nuisibles dès aujourd'hui.
             N'hésitez pas à nous contacter pour planifier un rendez-vous le plus rapidement possible !</p>
       </div>
-
+  
 
       <div class="bloc-container">
 
-         <div id="avis">
-            <div class="avisContainer">Avis
-               <div id='resultForm'></div>
-
-            </div>
-         </div>
-
-
          <div id="formulaire" class="formulaire">
-            <div class="theFormulaire">Formulaire
+
+            <div class="theFormulaire"><div id="titleForm">Formulaire</div>
 
                <form id='innerForm'>
                   <label for="name">Nom :</label>
@@ -70,10 +110,18 @@
                </form>
             </div>
          </div>
+         <div id="avis">
+            <div class="avisContainer">Avis
+               <div id='resultForm'></div>
+
+            </div>
+         </div>
+
+
       </div>
 
-
    </div>
+  
 
 
 <footer>
@@ -118,7 +166,7 @@
          </li>
       </ul>
    </div>
-   </div>
+   
 </footer>
 </body>
 <script src="homescript.js"></script>

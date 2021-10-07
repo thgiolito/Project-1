@@ -1,20 +1,11 @@
   
 body {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 109vh;
   background-color: black;
-  color: black; 
+  color: #72B62B; 
   font-family: Courier;
   text-align: center;
-}
-
-
-  h1 {
-    background-color: grey;
-   font-size: 6vw;
 }
 
   h2 {
@@ -26,11 +17,21 @@ body {
 }
 .avisContainer {
     margin: 4vh;
-    font-size: xx-large;
+    max-height: 90%;
+    font-size: x-large;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#titleForm {
+  margin-bottom: 10vh;
 }
 .theFormulaire {
+  width: 80%; 
   margin: 4vh;
-  font-size: xx-large;
+  font-size: x-large;
 
 }
 label{
@@ -49,12 +50,13 @@ textarea{
 a {
   color: #72b62b;
 }
-.presentation {
+ 
+    
+.presentation, .contact {
     box-shadow: #9dc41a 3px 0px 15px; 
+    padding: 5vh;
+    margin-bottom: 5vh;
 }
-.contact {
-    box-shadow: #9dc41a 3px 0px 15px;
-  }
 
   #p1 {
     color: #72b62b;
@@ -74,6 +76,8 @@ a {
     justify-content: space-around;
     margin-top: 4vh;
     margin-bottom: 4vh;
+    max-height: 120vh;
+    
   
     
   }
@@ -81,8 +85,8 @@ a {
   #avis {
    
     color: black;
-    
-      min-height: 30vh;
+  
+    height: 50vh;
       width: 80vw;
       background-color: grey;
       box-shadow: #9DC41A 3px 0px 15px;
@@ -90,14 +94,19 @@ a {
       flex-direction: column;
       align-items: center; 
       justify-content: flex-start;
-    
+      margin-bottom: 5vh;
+     
    }
+#innerForm {
 
+  display: flex;
+  flex-direction: column;
+}
    #formulaire {
  
     color: black;
  
-    height: 30vh;
+    height: 50vh; 
     width: 80vw;
     background-color: #72b62b;
     box-shadow: #9DC41A 3px 0px 15px;
@@ -105,24 +114,36 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
+
 
    }
 
    #form {
-     width: 90%;
-     max-height: 90%;
+     width: 100%;
+     max-height: 100%;
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
+     justify-content: space-evenly;
 
    }
+
    #accueil {
-     width: 100%;
+     display: flex;
+     width: 90vw;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
    }
 
   #resultForm {
     display: flex;
+    overflow-y: scroll;
+  }
+  .presentation h2, .contact h2 {
+    margin-bottom: 2vh;
+
   }
 
   @media only screen and (min-width: 768px) {
@@ -132,16 +153,15 @@ a {
       flex-direction: row;
       justify-content: space-around;
       align-items: space-around;
+      height: 60vh;
     }
     #formulaire  {
-    width: 35vw;
-    height: 30vh;
+    
     justify-content: space-around;
     align-items: space-around;
     } 
     #avis {
-      width: 35vw;
-      height: 30vh;
+     
       align-items: space-around;
 
     }
@@ -156,42 +176,34 @@ a {
 }
 
 
-
-
-
 .navbar .desktop-list {
   display: none;
 }
 
-.navbar{
+.navbar {
   display:flex;
   width: 100%;
   background: black; 
   align-items: center;
   height: 10vh;
-
-
-
 }
-
 
 .navbar ul{
   flex:1;
   text-align: right;
-
 }
 
 .navbar ul li{
   /*display: inline-block;*/
   justify-content: center;
-    align-items: center;
-
+  align-items: center; 
 }
 
 .navbar ul li a {
   margin: 5px;
   text-decoration: none;
- }
+}
+
 .navbar ul li i{
   color :black; 
   justify-content: space-around;
@@ -205,9 +217,7 @@ a {
   height:50px;
   text-align: center;
   border-radius:5px;
-
-}
-
+}  
 
 .testa  {
   padding: 20px 20px;
@@ -220,10 +230,8 @@ a {
   text-decoration: none;
   display: none;
   text-align: center;
-  
- 
-  
 }
+
 .testb  {
   padding: 20px 20px;
   margin: 0px 40px 0px 0px;
@@ -235,17 +243,14 @@ a {
   text-decoration: none;
   display: non;
   text-align: center;
-  
 }
 
 .ctn{
-  
- 
   padding: 30px 20px;
   border-radius: 5px;
   width: 20vw;
   height: 10vh;
-  background-color: #72B62B;
+  background: linear-gradient(#72B62B, #5da312);
   color:black;
   font-family: Stencil;
   font-size: 3vw;
@@ -253,161 +258,138 @@ a {
   text-align: center;
   display: none;
   justify-content: center;
-    align-items: center;
-
-  
+  align-items: center;
 }
+
 .ctn:hover{
-  color: rgb(189, 186, 21);
+  background: linear-gradient(#a7eb5f, #72B62B);
 }
 
 .logo img {
   float:left;
- margin: auto;
+  margin: auto;
   height: 10vh;
-
-   
 }
 
 .mobile-list{
   display: block;
   color :#72B62B; 
-  bottom: 0;
-  left: 0;
   position: fixed;
+  bottom: 0;
   align-items: center;
   background-color: black;
   width: 100%;
   justify-content: space-around;
   display: flex;
   font-size: 10px;
-  padding: 0 0 0 5px;
+  border: 5px solid black;
+  z-index: 1;
 }
+
 .mobile-list ul li {
   font-size: 30px;
   color :black;
   text-align: center;
-  
-   
 }
+
 .mobile-list li:hover i{
   color: yellow;
-  
 }
 
+/* TABLET & DESKTOP BAR CONFIG*/
 
-
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
-/* MOBILE NAV BAR CONFIG*/
 @media only screen and (min-width:576px){
   .navbar .desktop-list {
-       display: flex;
-       justify-content: space-around;
-       
-   }
-   .desktop-list li :hover {
-       color: rgb(189, 186, 21);
-       
-       
-   }
-   .ctn{
-       display: flex;
-       padding: 12px 20px;
-   }
-   .testa{
-       display: flex;
-       padding: 10px 20px;
-       
-   }
-   .testb{
-       display: flex;
-       padding: 10px 20px;
-   }
-   .mobile-list{
-       display: none;
-   
-   }
-  
-   .navbar ul li a {
-       color:black;
-       text-decoration: none;
-   }
-  }
-   
-
-@media only screen and (min-width:768px){
- .navbar .desktop-list {
       display: flex;
-      justify-content: space-around;
-      
+      justify-content: space-around;    
   }
+
   .desktop-list li :hover {
       color: rgb(189, 186, 21);
-      
-      
   }
   .ctn{
       display: flex;
-      
+      padding: 12px 20px;
   }
   .testa{
       display: flex;
-      
+      padding: 10px 20px;
   }
   .testb{
       display: flex;
-    
+      padding: 10px 20px;
   }
   .mobile-list{
       display: none;
-  
   }
- 
   .navbar ul li a {
       color:black;
       text-decoration: none;
   }
 }
+   
+
+@media only screen and (min-width:768px){
+  .navbar .desktop-list {
+      display: flex;
+      justify-content: space-around;
+  }
+  .desktop-list li :hover {
+      color: rgb(189, 186, 21);
+  }
+  .ctn{
+      display: flex;
+  }
+  .testa{
+      display: flex;
+  }
+  .testb{
+      display: flex;
+  }
+  .mobile-list{
+      display: none;
+  }
+  .navbar ul li a {
+      color:black;
+      text-decoration: none;
+  }
+}
+
 @media only screen and (min-width:992px){
   .navbar .desktop-list {
-       display: flex;
-       justify-content: space-around;
-       
-   }
-   .desktop-list li :hover {
-       color: rgb(189, 186, 21);
-       
-       
-   }
-   .ctn{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
-   .testa{
-       display: flex;
-   }
-   .testb{
-       display: flex;
-   }
-   .mobile-list{
+      display: flex;
+      justify-content: space-around;
+  }
+  .desktop-list li :hover {
+      color: rgb(189, 186, 21);
+  }
+  .ctn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .testa{
+      display: flex;
+  }
+  .testb{
+      display: flex;
+  }
+  .mobile-list{
        display: none;
-   
-   }
-  
-   .navbar ul li a {
-       color:black;
-       text-decoration: none;
-   }
+  }
+  .navbar ul li a {
+      color:black;
+      text-decoration: none;
+  }
 }
+
 
 
 /* --------------------------------------SLIDER--------------------------------- */
 
 #slider {
   margin: 20px auto;
-  width: 1200px;
+  width: 900px;
   max-width: 100%;
   text-align: center;
 }
@@ -424,10 +406,10 @@ a {
   background: #72B62B;
   position: relative;
   z-index: 1;
-  max-width: calc(100vw- 20vw);
+  max-width: calc(100% - 140px);
   margin: 0 auto;
   margin: 20px auto;
-  width: 80vw;
+  width: 600px;
 }
 
 
@@ -464,38 +446,34 @@ a {
 }
 
 #controls {
-  width: 98%;
+  width: 100%;
   height: 50px;
   z-index: 3;
   position: relative;
-  margin: -150px 0 0 3px;
-  
+  margin: -150px 0 0 0;
 
 }
 #controls label {
-  
+  transition: opacity 0.2s ease-out;
   display: none;
   width: 50px;
   height: 50px;
-  
+  opacity: .4;
   
   
   
 }
 #controls label:hover {
   opacity: 1;
- 
 }
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(1) {
-    background: url(https://i.ibb.co/C5vBy91/TDright2.png) no-repeat;
-    float:right;
-    margin: 0;
-    display: block;
-    background-size: contain;
-    background-position: right;
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float:right;
+  margin: 0;
+  display: block;
  
   
 }
@@ -503,11 +481,10 @@ a {
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(4),
 #slide4:checked ~ #controls label:nth-last-child(1) {
-    background: url(https://i.ibb.co/94rXzB8/TDleft2.png) no-repeat;
-    float:left;
-    margin: 0;
-    display: block;
-    background-size: contain;
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float:left;
+  margin: 0;
+  display: block;
   
 }
 #bullets {
@@ -614,6 +591,7 @@ img {
   }
 
 }
+
 /* ----------FOOTER--FOOTER--FOOTER----------  */
 
 footer {
@@ -629,6 +607,7 @@ footer {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png%22");
   color: #72b62b;
   font-size: 8px;
+  margin-bottom: 11vh;
   /* margin-top: 10vh;*/ 
 }
 
@@ -656,6 +635,7 @@ svg {
   color: #72b62b;
   cursor: pointer;
   text-decoration: none;
+}
 
 .footer-link :hover {
   color: #9DC41A;
@@ -664,6 +644,7 @@ svg {
 
 @media screen and (min-width: 768px) { 
   footer {
+      margin-bottom: 0;
       height: 15vh;
       font-size: 12px;
   }
@@ -683,9 +664,4 @@ svg {
       margin: 0.4vh;
   }
 }
-
-
-
-
-
 
