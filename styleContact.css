@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+}
+
+
 body {
 
     font-family: Courier;
@@ -9,7 +14,7 @@ body {
     color: #72B62B;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -88,7 +93,7 @@ body {
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
-    display: non;
+    display: none;
     text-align: center;
 }
   
@@ -235,6 +240,7 @@ body {
 
 
 section {
+
     display: flex;
     margin: 2vh;
 
@@ -255,6 +261,7 @@ main {
 .title {
 
     background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     width:90vw;
     height: 20vh;
     font-family: Stencil;
@@ -310,6 +317,8 @@ h2 {
     flex-wrap: wrap;
 }
 #blockOne {
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     background-color: rgba(0, 0, 0, 0.575);
     height: 60vh;
     border: 3px solid #9DC41A;
@@ -324,6 +333,7 @@ h2 {
 }
 
 #blockTwo {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     background-color: rgba(0, 0, 0, 0.575);
     height: 60vh;
     border: 3px solid #9DC41A;
@@ -340,17 +350,48 @@ h2 {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    align-items: space-around;
+    margin: 4px;
     width: 90%;
 }
 
 
-input  select {
-    color: #9DC41A;
+
+input [type=text] {
+
+    border: 1px solid #9DC41A;
     background-color: black;
+    outline: #9DC41A;
     font-size: 2px;
-    display:flex;
     width : 10vw;
-    flex-wrap: wrap;
+    margin-bottom: 4px;
+    resize: none;
+    background-color: black;
+}
+
+input [type=submit] {
+
+
+    margin-top: 4vh;
+    background-color: #9DC41A;
+
+}
+select {
+
+    border: 1px solid #9DC41A;
+    background-color: black;
+    color: #9DC41A;
+    font-weight: bold;
+    
+}
+
+option {
+
+    border: 1px solid #9DC41A;
+    background-color: black;
+    color: #9DC41A;
+    font-weight: bold;
+    
 }
 
 
@@ -381,7 +422,9 @@ body {
 
 /* ------------------------------------------- FOOTER ------------------------------- */
 
+
 footer {
+
     display: flex ;
     bottom: 0; 
     width: 100%;
@@ -392,9 +435,15 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     font-size: 8px;
     z-index: -1;
+}
+
+.content-footer {
+    display: flex;
+    max-height: 9vh;
 }
 
 svg {
