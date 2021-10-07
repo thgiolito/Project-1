@@ -1,0 +1,525 @@
+html {
+    height: 100%;
+}
+
+
+body {
+
+    font-family: Courier;
+    width: 100vw;
+    height: 100vh;  
+    padding: 0;
+    margin: auto;
+    background-color: black;
+    color: #72B62B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------NavBar---------------  */
+
+.navbar .desktop-list {
+    display: none;
+  }
+  
+.navbar{
+    display:flex;
+    width: 100%;
+    background: black; 
+    align-items: center;
+}
+  
+.navbar ul{
+    flex:1;
+    text-align: right;
+}
+  
+.navbar ul li{
+    /*display: inline-block;*/
+    justify-content: center;
+    align-items: center; 
+}
+  
+.navbar ul li a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li i{
+    color :black; 
+    justify-content: space-around;
+    display: flex;
+    font-size: 8vw;
+    background-color:#72B62B; 
+    display: block;
+    padding: 8px 15px;
+    margin: 0px 5px 0px 0px;
+    width:70px;
+    height:50px;
+    text-align: center;
+    border-radius:5px;
+}  
+  
+.testa  {
+    padding: 20px 20px;
+    margin: 0px 40px 0px 0px;
+    border-radius: 5px;
+    height: 8vh;
+    background-color: #72B62B;
+    font-family: Stencil;
+    font-size: 2vw;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+}
+
+.testb  {
+    padding: 20px 20px;
+    margin: 0px 40px 0px 0px;
+    border-radius: 5px;
+    height: 8vh;
+    background-color: #72B62B;
+    font-family: Stencil;
+    font-size: 2vw;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+}
+  
+.ctn{
+    padding: 30px 20px;
+    border-radius: 5px;
+    width: 20vw;
+    height: 10vh;
+    background-color: #72B62B;
+    color:black;
+    font-family: Stencil;
+    font-size: 3vw;
+    text-decoration: none;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn:hover{
+    color: rgb(189, 186, 21);
+}
+  
+.logo img {
+    float:left;
+    margin: auto;
+    height: 10vh;
+}
+  
+.mobile-list{
+    display: block;
+    color :#72B62B; 
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    font-size: 10px;
+    padding: 0 0 0 5px;
+}
+
+.mobile-list ul li {
+    font-size: 30px;
+    color :black;
+    text-align: center;
+}
+
+.mobile-list li:hover i{
+    color: yellow;
+}
+  
+/* TABLET & DESKTOP BAR CONFIG*/
+
+@media only screen and (min-width:576px){
+    .navbar .desktop-list {
+        display: flex;
+        justify-content: space-around;
+         
+    }
+    .desktop-list li :hover {
+        color: rgb(189, 186, 21);
+    }
+    .ctn{
+        display: flex;
+        padding: 12px 20px;
+    }
+    .testa{
+        display: flex;
+        padding: 10px 20px;
+    }
+    .testb{
+        display: flex;
+        padding: 10px 20px;
+    }
+    .mobile-list{
+        display: none;
+    }
+    .navbar ul li a {
+        color:black;
+        text-decoration: none;
+    }
+}
+     
+  
+@media only screen and (min-width:768px){
+    .navbar {
+        height: 10vh;
+    }
+
+    .navbar .desktop-list {
+        
+        display: flex;
+        justify-content: space-around;
+    }
+    .desktop-list li :hover {
+        color: rgb(189, 186, 21);
+    }
+    .ctn{
+        display: flex;
+    }
+    .testa{
+        display: flex;
+    }
+    .testb{
+        display: flex;
+    }
+    .mobile-list{
+        display: none;
+    }
+    .navbar ul li a {
+        color:black;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .navbar .desktop-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .desktop-list li :hover {
+        color: rgb(189, 186, 21);
+    }
+    .ctn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testa{
+        display: flex;
+    }
+    .testb{
+        display: flex;
+    }
+    .mobile-list{
+         display: none;
+    }
+    .navbar ul li a {
+        color:black;
+        text-decoration: none;
+    }
+}
+
+
+/* -------------------------------CONTACT -------------------------------------*/
+
+
+section {
+
+    display: flex;
+    margin: 2vh;
+
+}
+
+main {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 90vw;
+
+}
+.title {
+
+    background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    width:90vw;
+    height: 20vh;
+    font-family: Stencil;
+    font-size: 2vw;
+    box-shadow: #9DC41A 3px 0px 15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+h2 {
+    
+    font-family: Impact;
+    font-size: 3vw ;
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+#recap {
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    padding: 10px;
+    box-shadow: #9DC41A 3px 0px 15px;
+
+
+}
+
+#firstName {
+    display:block;
+    background-color: black;
+    border: 1px solid #9DC41A;
+    color: #9DC41A;
+}
+
+#name {
+
+    background-color: black;
+    border: 1px solid #9DC41A;
+    color: #9DC41A;
+}
+
+#address {
+    
+    background-color: black;
+    border: 1px solid #9DC41A;
+    color: #9DC41A;
+}
+#lastName {
+    display: block;
+}
+
+#mainBlock {
+
+    box-shadow: #9cc41afb 0px 22px 70px 4px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #9cc41ab7;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#blockOne {
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 60vh;
+    border: 3px solid #9DC41A;
+    margin: 2vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-width: 80%;
+
+
+}
+
+#blockTwo {
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 60vh;
+    border: 3px solid #9DC41A;
+    margin: 2vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    display: none;
+    min-width: 80%;
+}
+
+
+#contactForm {
+
+    padding: 2px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: space-around;
+    margin: 4px;
+    width: 90%;
+}
+
+
+
+input [type=text] {
+
+    border: 1px solid #9DC41A;
+    background-color: black;
+    outline: #9DC41A;
+    font-size: 2px;
+    width : 10vw;
+    margin-bottom: 4px;
+    resize: none;
+    background-color: black;
+}
+
+input [type=submit] {
+
+
+    margin-top: 4vh;
+    background-color: #9DC41A;
+
+}
+select {
+
+    border: 1px solid #9DC41A;
+    background-color: black;
+    color: #9DC41A;
+    font-weight: bold;
+    
+}
+
+option {
+
+    border: 1px solid #9DC41A;
+    background-color: black;
+    color: #9DC41A;
+    font-weight: bold;
+
+}
+
+
+
+/* --------------------------------RESPONSIVE DESIGN FOR DESKTOP------------------------------------------- */
+
+body {
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+
+    #blockTwo {
+        display: flex;
+        min-width: 40%;
+        max-width: 80%;
+        width: 40vh;
+    }
+
+    #blockOne {
+        min-width : 40%;
+        max-width: 80%;
+        width: 40vh;
+    }
+    
+
+}
+
+/* ------------------------------------------- FOOTER ------------------------------- */
+
+
+footer {
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    height: 9vh;
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    color: #72b62b;
+    font-size: 8px;
+    /* margin-top: 10vh; */
+}
+
+svg {
+    width: 2vh;
+    margin: 0.3vw;
+    vertical-align: middle;
+}
+
+.bloc {
+    margin: 1vw;
+    height: 7vh;
+    vertical-align: text-top;
+}
+
+.bloc h3 {
+    margin-bottom: 1vh;
+}
+
+.bloc ul {
+    list-style-type: none;
+}
+
+.footer-link {
+    color: #72b62b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #9DC41A;
+    font: bold;   
+}
+
+@media screen and (min-width: 768px) { 
+    footer {
+        height: 15vh;
+        font-size: 12px;
+    }
+    body {
+        height: 100vh;
+    }
+    svg {
+        width: 2vh;
+    }
+    .bloc {
+        margin: 0.2vh;
+        height: 12vh;
+        vertical-align: text-top;
+    }
+    .footer-services li ,
+    .footer-contact p {
+        margin: 0.4vh;
+    }
+}
