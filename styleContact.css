@@ -29,6 +29,12 @@ body {
 
 /* ----------------NavBar---------------  */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  
 .navbar .desktop-list {
     display: none;
   }
@@ -38,6 +44,7 @@ body {
     width: 100%;
     background: black; 
     align-items: center;
+    height: 10vh;
 }
   
 .navbar ul{
@@ -374,6 +381,13 @@ h2 {
     align-items: center;
     display: none;
     min-width: 80%;
+}
+
+#contentBlockTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
 }
 
 
