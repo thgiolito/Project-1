@@ -31,92 +31,96 @@
     </nav>
 
     <main>
+        <div class="contact-wrapper">
+
+          <section class="title">
+              <h1>Contactez-nous !</h1>
+          </section>
+          <section id="recap">
+              <article>T&D Ltd. vous aide au quotidien depuis de nombreuses années, pour vous débarrasser de tous types de nuisibles surnaturels.</article>
+          </section>
+          <section id="mainBlock">
+              <article id="blockOne">
+                  <h2>Votre demande :</h2>
+                  <form id="contactForm">
+                      <label for="firstName">Votre prénom :</label>
+                      <input type="text" id="firstName" name="firstName">
+                      <label for="lastName">Votre nom :</label>
+                      <input type="text" id="name" name="name">
+                      <label for="address">Votre adresse :</label>
+                      <input type="text" id="address" name="address">
+                      <div></div>
+  
+                      <label for="monsters">Qui rôde dans votre maison ?</label>
+                      <select id="monsterType" name="monsters">
+                          <option value="it">Il y a un clown étrange dans les environs.</option>
+                          <option value="eggs">Quelqu'un a planté des oeufs étranges près de chez moi.</option>
+                          <option value="spiders">Des araignées mutantes déciment ma famille !</option>
+                          <option value="zombaby">Des progénitures mort-vivantes me courent après !</option>
+                          <option value="data">Il y a quelqu'un qui marmonne du Python de manière inquiétante.</option>
+                          <option value="sadako">Une dame louche est sortie de mon téléviseur !</option>
+                          <option value="noiraude">Des petites boules de suie squattent mon appart !</option>
+                          <option value="lego">Ces maléfiques briques en plastiques ont envahi ma moquette!</option>
+                          <option value="demogorgon">Un humanoïde à tête horrible est apparu.</option>
+                          <option value="chucky">Une poupée psychopathe s'est invitée dans mon salon.</option>
+                          <option value="chupacabra">Des vampires sauvages rôdent aux alentours.</option>
+                          <option value="cthulhu">La fin du monde est proche, un homme-poulpe vient de me le dire.</option>
+                      </select>
+  
+                      <label for="monstercount"> Combien sont-ils ?</label>
+                      <select id="monstercount" name="monstercount">
+                          <option value="2">Il doit y en avoir un ou deux.</option>
+                          <option value="5">Il y a un petit groupe de ces horreurs.</option>
+                          <option value="10">Ils sont presque une douzaine !</option>
+                          <option value="20">Je n'arrive plus à les compter, aidez-moi !</option>
+                      </select>
+  
+                      <label for="userWhen">Quelle est l'urgence de votre situation ?</label>
+                      <select id="userWhen" name="userWhen">
+                          <option value="1">J'ai besoin d'aide maintenant !</option>
+                          <option value="5">Mon problème doit être réglé dans la semaine.</option>
+                          <option value="15">Cela peut attendre je commence à m'accoutumer.</option>
+                      </select>
+  
+  
+                      <input type="submit" value="Simulation :">
+  
+                  </form>
+              </article>
+              <article id="blockTwo" class='result'>
+                  <h2>Notre solution :</h2>
+                  <p id='blockTwoP'>Nombre d'intervenants :</p>
+                  <div id="intervenantsResult"></div>
+                  <p id='blockTwoP'> Date d'intervention :</p>
+                  <div id="dateResult"></div>
+                  <p id='blockTwoP'>Prix de l'opération</p>
+                  <div id="priceResult"></div>
+                  <input type="submit" value="Payer ?" onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQhttps://www.w3docs.com';">
+              </article>
+  
+          </section>
+        </div>
+      </main>
         
-        <section class="title">
-            <h1>Contactez-nous !</h1>
-        </section>
-        <section id="recap">
-            <article>T&D Ltd. vous aide au quotidien depuis de nombreuses années, pour vous débarrasser de tous types de nuisibles surnaturels.</article>
-        </section>
-        <section id="mainBlock">
-            <article id="blockOne">
-                <h2>Votre demande :</h2>
-                <form id="contactForm">
-                    <label for="firstName">Votre prénom :</label>
-                    <input type="text" id="firstName" name="firstName">
-                    <label for="lastName">Votre nom :</label>
-                    <input type="text" id="name" name="name">
-                    <label for="address">Votre adresse :</label>
-                    <input type="text" id="address" name="address">
-                    <div></div>
-
-                    <label for="monsters">Qui rôde dans votre maison ?</label>
-                    <select id="monsterType" name="monsters">
-                        <option value="it">Il y a un clown étrange dans les environs.</option>
-                        <option value="eggs">Quelqu'un a planté des oeufs étranges près de chez moi.</option>
-                        <option value="spiders">Des araignées mutantes déciment ma famille !</option>
-                        <option value="zombaby">Des progénitures mort-vivantes me courent après !</option>
-                        <option value="data">Il y a quelqu'un qui marmonne du Python de manière inquiétante.</option>
-                        <option value="sadako">Une dame louche est sortie de mon téléviseur !</option>
-                        <option value="noiraude">Des petites boules de suie squattent mon appart !</option>
-                        <option value="lego">Ces maléfiques briques en plastiques ont envahi ma moquette!</option>
-                        <option value="demogorgon">Un humanoïde à tête horrible est apparu.</option>
-                        <option value="chucky">Une poupée psychopathe s'est invitée dans mon salon.</option>
-                        <option value="chupacabra">Des vampires sauvages rôdent aux alentours.</option>
-                        <option value="cthulhu">La fin du monde est proche, un homme-poulpe vient de me le dire.</option>
-                    </select>
-
-                    <label for="monstercount"> Combien sont-ils ?</label>
-                    <select id="monstercount" name="monstercount">
-                        <option value="2">Il doit y en avoir un ou deux.</option>
-                        <option value="5">Il y a un petit groupe de ces horreurs.</option>
-                        <option value="10">Ils sont presque une douzaine !</option>
-                        <option value="20">Je n'arrive plus à les compter, aidez-moi !</option>
-                    </select>
-
-                    <label for="userWhen">Quelle est l'urgence de votre situation ?</label>
-                    <select id="userWhen" name="userWhen">
-                        <option value="1">J'ai besoin d'aide maintenant !</option>
-                        <option value="5">Mon problème doit être réglé dans la semaine.</option>
-                        <option value="15">Cela peut attendre je commence à m'accoutumer.</option>
-                    </select>
-
-
-                    <input type="submit" value="Submit">
-
-                </form>
-            </article>
-            <article id="blockTwo" class='result'>
-                <h2>Notre solution :</h2>
-                <p>Nombre d'intervenants :</p>
-                <div id="intervenantsResult"></div>
-                <p> Date d'intervention :</p>
-                <div id="dateResult"></div>
-                <p>Prix de l'opération</p>
-                <div id="priceResult"></div>
-            </article>
-
-        </section>
-    </main>
     <footer>
       <div class="bloc footer-services">
           <h3>Services</h3>
           <ul class="services-list">
-              <li><a >Tracking</a></li>
-              <li><a >Destroying</a></li>
-              <li><a >Tartifletting</a></li>
+              <li><a href="https://static.gofugyourself.com/uploads/2018/07/giphy-1532996884.gif" class="footer-link">Tracking</a></li>
+              <li><a href="https://media0.giphy.com/media/fwc2FKpbUoGDm9sgQn/200.gif" class="footer-link">Destroying</a></li>
+              <li><a href="https://c.tenor.com/3sgpmeZC2mYAAAAC/tartiflette.gif" class="footer-link">Tartifletting</a></li>
           </ul>
       </div> 
       <div class="bloc footer-contact">
           <h3>Rester en contact</h3>
-          <p>44 Rue Alphonse Penaud, Paris 16</p>
+          <p>44 Rue Alphonse Penaud, Paris</p>
           <p>supportclient@contact.com</p>
           <p>01 36 68 68 68</p>
       </div>
       <div class="bloc footer-medias">
           <h3>Nos réseaux</h3>
           <ul class="media-list">
-            <li><a >
+            <li><a href="https://www.facebook.com/ghostbuster.ghostbuster.524" class="footer-link">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -134,7 +138,7 @@
                 Facebook/T&D</a>
             </li>
             <li>
-              <a >
+              <a href="https://www.instagram.com/ghostbustersfrance/?hl=fr" class="footer-link">
                 <svg
                   aria-hidden="true"
                   focusable="false"

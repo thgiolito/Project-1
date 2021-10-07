@@ -66,9 +66,12 @@ form.onsubmit = function(event){
     const userWhen = document.querySelector('#userWhen').value;
 
     const intervenantsResult = document.getElementById('intervenantsResult');
-    const teamNeeded = document.createElement('div');
-    teamNeeded.innerHTML = `${monsters[monsterType].intervenants * monsterNumber/2}`;
-    intervenantsResult.appendChild(teamNeeded);
+    intervenantsResult.innerHTML = `${monsters[monsterType].intervenants * monsterNumber/2}`;
+    intervenantsResult.style.backgroundColor = 'black';
+    intervenantsResult.style.border = '1px solid #9DC41A';
+    intervenantsResult.style.padding = '3px';
+    intervenantsResult.style.borderRadius = '5px';
+    intervenantsResult.style.fontWeight ='bold';
 
     let currentDate = new Date();
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -80,24 +83,24 @@ form.onsubmit = function(event){
     const result = addDays(currentDate, userWhen).toLocaleDateString(undefined, options);
     const dateResult = document.getElementById('dateResult');
     dateResult.innerHTML = `${result}`;
-
+    dateResult.style.backgroundColor = 'black';
+    dateResult.style.border = '1px solid #9DC41A';
+    dateResult.style.padding = '3px';
+    dateResult.style.borderRadius = '5px';
+    dateResult.style.fontWeight ='bold';
 
     const priceResult = document.getElementById('priceResult');
-    priceResult.innerHTML = `${monsters[monsterType].price * monsterNumber}`;
-
+    priceResult.innerHTML = `${monsters[monsterType].price * monsterNumber}€`;
+    priceResult.style.backgroundColor = 'black';
+    priceResult.style.border = '1px solid #9DC41A';
+    priceResult.style.padding = '3px';
+    priceResult.style.borderRadius = '5px';
+    priceResult.style.fontWeight ='bold';
     if (window.screen.width <= 768) {
     blockTwo.style.display = 'flex';
     blockOne.style.display= 'none';
     }
     else {}
-   
-
-    console.log(result);
-    console.log(monsterNumber);
-    console.log(monsterType);
-    console.log(userWhen);
-    console.log(monsters[monsterType].price * monsterNumber);
-    console.log(monsters[monsterType].intervenants * monsterNumber/2);
 }
 
 
