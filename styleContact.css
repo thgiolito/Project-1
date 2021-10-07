@@ -4,27 +4,20 @@ html {
 
 
 body {
-
     font-family: Courier;
+    text-align: center;
     width: 100vw;
-    height: 100vh;  
+    height: 109vh;  
     padding: 0;
     margin: auto;
     background-color: black;
     color: #72B62B;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
+    text-align: center; */
 }
-
-
-
-
-
-
-
 
 
 /* ----------------NavBar---------------  */
@@ -33,13 +26,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  } 
-  
+  }
+
 .navbar .desktop-list {
     display: none;
   }
   
-.navbar{
+.navbar {
     display:flex;
     width: 100%;
     background: black; 
@@ -100,7 +93,7 @@ body {
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
-    display: none;
+    display: non;
     text-align: center;
 }
   
@@ -109,7 +102,7 @@ body {
     border-radius: 5px;
     width: 20vw;
     height: 10vh;
-    background-color: #72B62B;
+    background: linear-gradient(#72B62B, #5da312);
     color:black;
     font-family: Stencil;
     font-size: 3vw;
@@ -121,7 +114,7 @@ body {
 }
 
 .ctn:hover{
-    color: rgb(189, 186, 21);
+    background: linear-gradient(#a7eb5f, #72B62B);
 }
   
 .logo img {
@@ -133,16 +126,16 @@ body {
 .mobile-list{
     display: block;
     color :#72B62B; 
-    bottom: 0;
-    left: 0;
     position: fixed;
+    bottom: 0;
     align-items: center;
     background-color: black;
     width: 100%;
     justify-content: space-around;
     display: flex;
     font-size: 10px;
-    padding: 0 0 0 5px;
+    border: 5px solid black;
+    z-index: 1;
 }
 
 .mobile-list ul li {
@@ -160,7 +153,7 @@ body {
 @media only screen and (min-width:576px){
     .navbar .desktop-list {
         display: flex;
-        justify-content: space-around;
+        justify-content:  space-around;
          
     }
     .desktop-list li :hover {
@@ -189,12 +182,7 @@ body {
      
   
 @media only screen and (min-width:768px){
-    .navbar {
-        height: 10vh;
-    }
-
     .navbar .desktop-list {
-        
         display: flex;
         justify-content: space-around;
     }
@@ -247,23 +235,21 @@ body {
     }
 }
 
-
 /* -------------------------------CONTACT -------------------------------------*/
 
 
 section {
-
     display: flex;
-    margin: 2vh;
-
+    margin: 2vw;
 }
 
 main {
     width: 100vw;
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    overflow-y: scroll;
+    /* margin: auto; */
+    /* height: 75vh; */
+    /* display: flex;
+    justify-content: center; */
+    /* overflow-y: scroll; */
 }
 
 .contact-wrapper {
@@ -272,35 +258,36 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    margin: auto;
+    /* height: 100vh; */
     width: 90vw;
-
 }
+
 .title {
 
     background-color: black;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     width:90vw;
-    height: 20vh;
-    font-family: Stencil;
-    font-size: 2vw;
+    height: 10vh;
     box-shadow: #9DC41A 3px 0px 15px;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
+    font-size: 4vh;
     margin: 0;
     text-align: center;
 }
+
 h2 {
-    
-    font-family: Impact;
-    font-size: 3vw ;
-    display:flex;
-    flex-wrap:nowrap;
+    margin: 1vw;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: 5vw ;
 }
 
 #recap {
@@ -310,7 +297,7 @@ h2 {
     justify-content: center;
     align-items:center;
     background-color: rgb(0, 0, 0);
-    width: 90%;
+    width: 90vw;
     padding: 10px;
     box-shadow: #9DC41A 3px 0px 15px;
 
@@ -343,7 +330,7 @@ h2 {
 
 #mainBlock {
 
-    box-shadow: #9cc41afb 0px 22px 70px 4px;
+    box-shadow: #9DC41A 3px 0px 15px;
     background-color: rgb(0, 0, 0);
     border: 3px solid #9cc41ab7;
     border-radius: 30px;
@@ -358,7 +345,6 @@ h2 {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     background-color: rgba(0, 0, 0, 0.575);
     height: 60vh;
-    border: 3px solid #9DC41A;
     margin: 2vh;
     display:flex;
     flex-direction: column;
@@ -370,11 +356,9 @@ h2 {
 }
 
 #blockTwo {
-
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     background-color: rgba(0, 0, 0, 0.575);
     height: 60vh;
-    border: 3px solid #9DC41A;
     margin: 2vh;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -392,20 +376,16 @@ h2 {
 
 
 #contactForm {
-
     padding: 2px;
     display:flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: space-around;
+    justify-content: space-around;
     margin: 4px;
     width: 90%;
+    height: 100%;
 }
 
-
-
 input [type=text] {
-
     border: 1px solid #9DC41A;
     background-color: black;
     outline: #9DC41A;
@@ -438,33 +418,50 @@ option {
     background-color: black;
     color: #9DC41A;
     font-weight: bold;
-
 }
 
+.button {
+    background: linear-gradient(#72B62B, #5da312);
+    color: black;
+    font-family: Stencil;
+    font-size: 2vh;
+    border-radius: 5px;
+    margin-top: 2vh;
+}
+.button:hover {
+    background: linear-gradient(#a7eb5f, #72B62B);
+    cursor: pointer;
+}
 
 
 /* --------------------------------RESPONSIVE DESIGN FOR DESKTOP------------------------------------------- */
 
-body {
+/* body {
     height: 100vh;
-}
+} */
 
 @media (min-width: 768px) {
-
     #blockTwo {
         display: flex;
         min-width: 40%;
         max-width: 80%;
         width: 40vh;
+        border: 3px solid #9DC41A;
     }
 
     #blockOne {
         min-width : 40%;
         max-width: 80%;
         width: 40vh;
+        border: 3px solid #9DC41A;
     }
-    
-
+    h2 {
+        margin: 0;
+        font-size: 2.5vw ;
+    }
+    section {
+        margin: 1vw;
+    }
 }
 
 /* ------------------------------------------- FOOTER ------------------------------- */
@@ -520,6 +517,7 @@ svg {
     footer {
         height: 15vh;
         font-size: 12px;
+        margin-top: 5vh;
     }
     body {
         height: 100vh;
