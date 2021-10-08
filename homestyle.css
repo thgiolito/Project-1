@@ -5,6 +5,7 @@ body {
   color: #72B62B; 
   font-family: Courier;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -224,6 +225,7 @@ a {
 
 .navbar ul li a {
   margin: 5px;
+  color: black;
   text-decoration: none;
 }
 
@@ -280,6 +282,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 1vh 0;
+  margin-right: 2vw;
 }
 
 .ctn:hover{
@@ -294,7 +297,7 @@ a {
 
 .mobile-list{
   display: block;
-  color :#72B62B; 
+  color:black;
   position: fixed;
   bottom: 0;
   align-items: center;
@@ -309,7 +312,7 @@ a {
 
 .mobile-list ul li {
   font-size: 30px;
-  color :black;
+  color:black;
   text-align: center;
 }
 
@@ -345,6 +348,7 @@ a {
   }
   .navbar ul li a {
      text-decoration: none;
+     color: #72B62B;
   }
 }
    

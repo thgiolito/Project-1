@@ -9,6 +9,7 @@ body {
     width: 100vw;
     height: 109vh;  
     padding: 0;
+    overflow-x: hidden;
     /* margin: auto; */
     background-color: black;
     color: #72B62B;
@@ -57,7 +58,7 @@ body {
   .navbar ul li a {
     margin: 5px;
     text-decoration: none;
-    color:#72B62B;
+    color: black;
   }
   
   .navbar ul li i{
@@ -113,6 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1vh 0;
+    margin-right: 2vw;
   }
   
   .ctn:hover{
@@ -178,6 +180,7 @@ body {
     }
     .navbar ul li a {
        text-decoration: none;
+       color: #72B62B;
     }
   }
      
@@ -263,22 +266,19 @@ main {
 }
 
 .title {
-
-    background-color: black;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     width:90vw;
-    height: 10vh;
-    box-shadow: #9DC41A 3px 0px 15px;
+    /* height: 10vh; */
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0;
 }
 
 h1 {
     font-size: 4vh;
-    margin: 0;
+    margin: 2vh auto;
     text-align: center;
 }
 
