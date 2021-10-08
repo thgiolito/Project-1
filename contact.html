@@ -42,13 +42,13 @@
                   <form id="contactForm">
                       <label for="firstName">Votre prénom :</label>
                       <input type="text" id="firstName" name="firstName">
-                      <label for="lastName">Votre nom :</label>
+                      <label for="name">Votre nom :</label>
                       <input type="text" id="name" name="name">
                       <label for="address">Votre adresse :</label>
                       <input type="text" id="address" name="address">
                       <div></div>
   
-                      <label for="monsters">Qui rôde dans votre maison ?</label>
+                      <label for="monsterType">Qui rôde dans votre maison ?</label>
                       <select id="monsterType" name="monsters">
                           <option value="it">Il y a un clown étrange dans les environs.</option>
                           <option value="eggs">Quelqu'un a planté des oeufs étranges près de chez moi.</option>
@@ -87,11 +87,11 @@
               <article id="blockTwo" class='result'>
                   <h2>Notre solution :</h2>
                   <div id="contentBlockTwo">
-                  <p id='blockTwoP'>Nombre d'intervenants :</p>
+                  <p>Nombre d'intervenants :</p>
                   <div id="intervenantsResult"></div>
-                  <p id='blockTwoP'> Date d'intervention :</p>
+                  <p> Date d'intervention :</p>
                   <div id="dateResult"></div>
-                  <p id='blockTwoP'>Prix de l'opération</p>
+                  <p>Prix de l'opération</p>
                   <div id="priceResult"></div>
                   <input class="button" type="submit" value="Payer ?" onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQhttps://www.w3docs.com';">
                 </div>
@@ -156,8 +156,9 @@
             </li>
           </ul>
         </div>
-      </div>
   </footer>
+
+  <script src="scriptContact.js"></script>
+
 </body>
-<script src="scriptContact.js"></script>
 </html>
