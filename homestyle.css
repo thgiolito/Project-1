@@ -1,6 +1,10 @@
   
 body {
+<<<<<<< HEAD
+
+=======
   width: 100%;
+>>>>>>> a4d5d46e56f1cb3d47dd5b18e47815739514da16
   height: 109vh;
   background-color: black;
   color: #72B62B; 
@@ -76,6 +80,7 @@ a {
   font-size: large;
 
   }
+
   .bloc-container {
     display: flex;
     flex-direction: column;
@@ -104,8 +109,13 @@ a {
       margin-bottom: 5vh;
      
    }
+   
+#innerForm {
+  
+  display: flex;
+  flex-direction: column;
 
-
+}
   
 #avis {
   color: black;
