@@ -116,19 +116,7 @@ a {
   flex-direction: column;
 
 }
-  
-#avis {
-  color: black;
-  height: 50vh;
-  width: 80vw;
-  background-color: grey;
-  box-shadow: #9DC41A 3px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: flex-start;
-  margin-bottom: 5vh;
-}
+
    #formulaire {
  
     color: #72b62b;
