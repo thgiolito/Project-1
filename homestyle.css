@@ -1,10 +1,5 @@
   
 body {
-<<<<<<< HEAD
-
-=======
-  width: 100%;
->>>>>>> a4d5d46e56f1cb3d47dd5b18e47815739514da16
   height: 109vh;
   background-color: black;
   color: #72B62B; 
@@ -49,14 +44,16 @@ input{
     min-height: 3vh;
     font-size: large;
     font-weight: bold;
-    background-color: #72B62B;
+    background-color: black;
+    box-shadow: #9dc41a 3px 0px 15px; 
 }
 
 
 textarea{
   min-width: 60%;
   min-height: 10vh;color: #72b62b;
-  background-color: #72B62B;
+  background-color:black;
+  box-shadow: #9dc41a 3px 0px 15px; 
 }
 
 a {
@@ -98,7 +95,7 @@ a {
    
     color:#72b62b;
     border-radius: 10px;
-    height: 50vh;
+    height: 100%;
       width: 40vw;
       background-color: black;
       box-shadow: #9DC41A 3px 0px 15px;
@@ -121,7 +118,7 @@ a {
  
     color: #72b62b;
     border-radius: 10px;
-    height: 50vh; 
+    height: 100%; 
     width: 40vw;
     background-color:black;
     box-shadow: #9DC41A 3px 0px 15px;
