@@ -3,8 +3,8 @@
 }
 
 body {
-    width: 100vw;
     padding: 0;
+    overflow-x: hidden;
     margin: auto;
     background-color: black;
     font-family: Courier;
@@ -48,7 +48,7 @@ body {
   .navbar ul li a {
     margin: 5px;
     text-decoration: none;
-    color:#72B62B;
+    color: black;
   }
   
   .navbar ul li i{
@@ -104,6 +104,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1vh 0;
+    margin-right: 2vw;
   }
   
   .ctn:hover{
@@ -169,6 +170,7 @@ body {
     }
     .navbar ul li a {
        text-decoration: none;
+       color: #72B62B;
     }
   }
      
