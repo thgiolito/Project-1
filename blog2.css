@@ -11,42 +11,47 @@ body {
     text-align: center;
   }
 
-  *{
+/* -------------------------------------------- NAVBAR ----------------------------- */
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
-.navbar .desktop-list {
+  
+  
+  .navbar .desktop-list {
     display: none;
   }
   
-.navbar {
+  .navbar {
     display:flex;
-    width: 100%;
+    width: 100vw;
     background: black; 
     align-items: center;
     height: 10vh;
-}
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
   
-.navbar ul{
+  .navbar ul{
     flex:1;
     text-align: right;
-}
+  }
   
-.navbar ul li{
+  .navbar ul li{
     /*display: inline-block;*/
     justify-content: center;
     align-items: center; 
-}
+  }
   
-.navbar ul li a {
+  .navbar ul li a {
     margin: 5px;
     text-decoration: none;
-}
-
-.navbar ul li i{
-    color :black; 
+    color:#72B62B;
+  }
+  
+  .navbar ul li i{
     justify-content: space-around;
     display: flex;
     font-size: 8vw;
@@ -58,39 +63,37 @@ body {
     height:50px;
     text-align: center;
     border-radius:5px;
-}  
+  }  
   
-.testa  {
+  .testa  {
     padding: 20px 20px;
-    margin: 0px 40px 0px 0px;
     border-radius: 5px;
     height: 8vh;
-    background-color: #72B62B;
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
     display: none;
     text-align: center;
-}
-
-.testb  {
+    color:#72B62B
+  }
+  
+  .testb  {
     padding: 20px 20px;
-    margin: 0px 40px 0px 0px;
     border-radius: 5px;
     height: 8vh;
-    background-color: #72B62B;
     font-family: Stencil;
     font-size: 2vw;
     text-decoration: none;
     display: non;
     text-align: center;
-}
+    color:#72B62B
+  }
   
-.ctn{
+  .ctn{
     padding: 30px 20px;
     border-radius: 5px;
-    width: 20vw;
-    height: 10vh;
+    width: 18vw;
+    height: 8vh;
     background: linear-gradient(#72B62B, #5da312);
     color:black;
     font-family: Stencil;
@@ -100,19 +103,20 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-}
-
-.ctn:hover{
-    background: linear-gradient(#a7eb5f, #72B62B);
-}
+    margin: 1vh 0;
+  }
   
-.logo img {
+  .ctn:hover{
+    background: linear-gradient(#a7eb5f, #72B62B);
+  }
+  
+  .logo img {
     float:left;
     margin: auto;
     height: 10vh;
-}
+  }
   
-.mobile-list{
+  .mobile-list{
     display: block;
     color :#72B62B; 
     position: fixed;
@@ -125,26 +129,26 @@ body {
     font-size: 10px;
     border: 5px solid black;
     z-index: 1;
-}
-
-.mobile-list ul li {
+  }
+  
+  .mobile-list ul li {
     font-size: 30px;
     color :black;
     text-align: center;
-}
-
-.mobile-list li:hover i{
-    color: yellow;
-}
+  }
   
-/* TABLET & DESKTOP BAR CONFIG*/
-
-@media only screen and (min-width:576px){
+  .mobile-list li:hover i{
+    color: yellow;
+  }
+  
+  /* TABLET & DESKTOP BAR CONFIG*/
+  
+  @media only screen and (min-width:576px){
     .navbar .desktop-list {
         display: flex;
-        justify-content:  space-around;
-         
+        justify-content: flex-end;    
     }
+  
     .desktop-list li :hover {
         color: rgb(189, 186, 21);
     }
@@ -164,16 +168,14 @@ body {
         display: none;
     }
     .navbar ul li a {
-        color:black;
-        text-decoration: none;
+       text-decoration: none;
     }
-}
+  }
      
   
-@media only screen and (min-width:768px){
+  @media only screen and (min-width:768px){
     .navbar .desktop-list {
         display: flex;
-        justify-content: space-around;
     }
     .desktop-list li :hover {
         color: rgb(189, 186, 21);
@@ -191,16 +193,14 @@ body {
         display: none;
     }
     .navbar ul li a {
-        color:black;
         text-decoration: none;
     }
-}
-
-@media only screen and (min-width:992px){
+  }
+  
+  @media only screen and (min-width:992px){
     .navbar .desktop-list {
         display: flex;
-        justify-content: space-around;
-    }
+     }
     .desktop-list li :hover {
         color: rgb(189, 186, 21);
     }
@@ -219,11 +219,12 @@ body {
          display: none;
     }
     .navbar ul li a {
-        color:black;
         text-decoration: none;
     }
-}
-
+  }
+  
+  
+  
 /* CSS page prezblog*/
 
     html {
