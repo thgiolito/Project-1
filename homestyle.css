@@ -387,6 +387,7 @@ margin-bottom: 5vh;
 
 /* --------------------------------------SLIDER--------------------------------- */
 
+
 #slider {
   margin: 20px auto;
   width: 900px;
@@ -406,10 +407,10 @@ margin-bottom: 5vh;
   background: #72B62B;
   position: relative;
   z-index: 1;
-  max-width: calc(100% - 140px);
+  max-width: calc(100vh - 20vh);
   margin: 0 auto;
   margin: 20px auto;
-  width: 600px;
+  width: 280px;
 }
 
 
@@ -454,11 +455,11 @@ margin-bottom: 5vh;
 
 }
 #controls label {
-  transition: opacity 0.2s ease-out;
+  
   display: none;
   width: 50px;
   height: 50px;
-  opacity: .4;
+  
   
   
   
@@ -470,10 +471,13 @@ margin-bottom: 5vh;
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  background: url(https://i.ibb.co/C5vBy91/TDright2.png) no-repeat;
   float:right;
   margin: 0;
   display: block;
+  background-size:28px;
+  background-position: right;
+  
  
   
 }
@@ -481,11 +485,13 @@ margin-bottom: 5vh;
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(4),
 #slide4:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  background: url(https://i.ibb.co/94rXzB8/TDleft2.png) no-repeat;
   float:left;
   margin: 0;
   display: block;
+  background-size:28px;
   
+ 
 }
 #bullets {
   margin: 90px 0 0;
@@ -509,7 +515,10 @@ margin-bottom: 5vh;
 img { 
   max-width: 98%;
   height: auto;
+
 }
+
+
 
 @media screen and (min-width: 576px) {
   
