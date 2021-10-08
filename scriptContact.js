@@ -51,6 +51,10 @@ const monsters = {
         intervenants: 75,
         price: 10000,
     },
+    data: {
+        intervenants: 1,
+        price: 75,
+    },
 
 
 }
