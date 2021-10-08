@@ -1,6 +1,6 @@
   
 body {
-  width: 100vw;
+
   height: 109vh;
   background-color: black;
   color: #72B62B; 
@@ -42,11 +42,16 @@ input{
     min-height: 3vh;
     font-size: large;
     font-weight: bold;
+    background-color: #72B62B;
 }
+
+
 textarea{
   min-width: 60%;
-    min-height: 3vh;
+  min-height: 10vh;color: #72b62b;
+  background-color: #72B62B;
 }
+
 a {
   color: #72b62b;
 }
@@ -84,11 +89,11 @@ a {
   
   #avis {
    
-    color: black;
-  
+    color:#72b62b;
+    border-radius: 10px;
     height: 50vh;
-      width: 80vw;
-      background-color: grey;
+      width: 40vw;
+      background-color: black;
       box-shadow: #9DC41A 3px 0px 15px;
       display: flex;
       flex-direction: column;
@@ -104,20 +109,19 @@ a {
 }
    #formulaire {
  
-    color: black;
- 
+    color: #72b62b;
+    border-radius: 10px;
     height: 50vh; 
-    width: 80vw;
-    background-color: #72b62b;
+    width: 40vw;
+    background-color:black;
     box-shadow: #9DC41A 3px 0px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 5vh;
-
-
    }
+
 
    #form {
      width: 100%;
@@ -172,7 +176,7 @@ a {
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 
