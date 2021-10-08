@@ -114,7 +114,9 @@ a {
   flex-direction: column;
 
 }
-
+#name {
+  color:#72B62B;
+}
    #formulaire {
  
     color: #72b62b;
